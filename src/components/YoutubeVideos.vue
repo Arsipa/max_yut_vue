@@ -4,8 +4,15 @@
             <div class="youtube__grid">
                 <div
                     class="youtube-frame-wrapper"
-                    v-for="src in this.$store.state.videos.slice(0, limit)">
-                    <iframe :src="src" title="YouTube video player"></iframe>
+                    v-for="src in this.$store.state.videos.slice(
+                        0,
+                        dynamicLimit
+                    )">
+                    <div class="loader"><i class="loader-icon"></i></div>
+                    <iframe
+                        @load="iframeLoaded"
+                        :src="src"
+                        title="YouTube video player"></iframe>
                 </div>
             </div>
             <div class="youtube__bottom">
@@ -31,9 +38,46 @@ export default {
     props: {
         limit: Number,
     },
+    data() {
+        return {
+            dynamicLimit: 1,
+        };
+    },
+    methods: {
+        iframeLoaded() {
+            if (this.dynamicLimit >= this.limit) return;
+            this.dynamicLimit += 1;
+        },
+    },
 };
 </script>
 <style scoped>
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.loader-icon {
+    width: 50px;
+    height: 50px;
+    border: 5px solid var(--green);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .youtube .youtube__grid {
     display: flex;
     flex-wrap: wrap;
@@ -45,12 +89,15 @@ export default {
     width: 50%;
     height: 400px;
     padding: 10px;
+    position: relative;
 }
 .youtube .youtube-frame-wrapper iframe {
     border-radius: 10px;
     border: none;
     width: 100%;
     height: 100%;
+    z-index: 2;
+    position: relative;
 }
 .youtube .youtube__bottom {
     display: flex;

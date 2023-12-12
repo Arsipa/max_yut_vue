@@ -7,7 +7,6 @@
                     <component :is="Component" :key="$route.path"></component>
                 </transition>
             </router-view>
-            <!-- <router-view /> -->
         </main>
         <Footer></Footer>
     </div>
@@ -40,7 +39,7 @@ main {
 }
 .slide-enter-active,
 .slide-leave-active {
-    transition: 1s;
+    transition: 0.5s;
 }
 .slide-enter-from,
 .slide-leave-to {

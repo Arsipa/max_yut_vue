@@ -74,26 +74,29 @@
                 </div>
             </div>
         </div>
-        <nav class="header__bottom container">
-            <router-link
-                :to="{ name: 'Index' }"
-                :class="{ 'route-active': isRouteActive('/') }"
-                >Главная</router-link
-            >
-            <router-link
-                v-for="category in this.$store.state.categories"
-                :to="category.route"
-                :class="{ 'router-link-active': isRouteActive(category.route) }"
-                >{{ category.title }}</router-link
-            >
-            <!-- <router-link to="/matras/index.html">Матрасы</router-link> -->
-            <router-link :to="{ name: 'Videos' }">Видео</router-link>
-            <!-- <router-link to="/kuxni/index.html">Акции</router-link> -->
-            <!-- <router-link to="/kredit.html">Кредит</router-link> -->
-            <!-- <router-link to="/cooperation.html">Сотрудничество</router-link> -->
-            <!-- <router-link to="/matras/index.html">О нас</router-link> -->
-            <!-- <router-link to="/matras/index.html">Отзывы</router-link> -->
-        </nav>
+        <div class="container">
+            <nav class="header__bottom">
+                <router-link
+                    :to="{ name: 'Index' }"
+                    :class="{ 'route-active': isRouteActive('/') }"
+                    >Главная</router-link
+                >
+                <router-link
+                    v-for="category in this.$store.state.categories"
+                    :to="category.route"
+                    :class="{
+                        'router-link-active': isRouteActive(category.route),
+                    }"
+                    >{{ category.title }}</router-link
+                >
+                <!-- <router-link to="/matras/index.html">Матрасы</router-link> -->
+                <router-link :to="{ name: 'Videos' }">Видео</router-link>
+                <router-link :to="{name: 'About'}">О нас</router-link>
+                <router-link :to="{name: 'Promo'}">Акции</router-link>
+                <router-link :to="{name: 'Reviews'}">Отзывы</router-link>
+                <!-- <router-link to="/kredit.html">Кредит</router-link> -->
+            </nav>
+        </div>
     </header>
 </template>
 
@@ -191,16 +194,15 @@ export default {
 }
 
 .header__bottom {
-    padding: 15px 0;
+    padding: 20px 0;
     display: flex;
     align-items: stretch;
     gap: 10px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 30px;
 }
 .header__bottom a {
-    padding: 5px 10px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,7 +211,8 @@ export default {
     text-align: center;
     color: #000;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
 }
 
 .header__bottom a.router-link-active,

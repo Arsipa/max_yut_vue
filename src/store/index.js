@@ -195,11 +195,11 @@ export default createStore({
                             value: "эмаль+лак",
                         },
                         {
-                            title: "Фурнитура ящики",
+                            title: "Фурнитура ящиков",
                             value: "Boyrd",
                         },
                         {
-                            title: "Фурнитура петли",
+                            title: "Фурнитура петель",
                             value: "Blum",
                         },
                         {
@@ -224,6 +224,32 @@ export default createStore({
                         "/publicImg/nazakaz/103/1-3.jpg",
                     ],
                     category: "nazakaz",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyrd.",
+                        },
+                        {
+                            title: "Обувница Ш-Г-В",
+                            value: "2000х200х450",
+                        },
+                        {
+                            title: "Первое изделие Ш-Г-В",
+                            value: "2000х600х2700",
+                        },
+                        {
+                            title: "Второе изделие Ш-Г-В",
+                            value: "2000х600х2700",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "74 400р.",
+                        },
+                    ],
                 },
                 {
                     id: 8,
@@ -234,6 +260,24 @@ export default createStore({
                         "/publicImg/nazakaz/104/1-1.jpg",
                     ],
                     category: "nazakaz",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "1800х400х2700",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyrd",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "33 080р.",
+                        },
+                    ],
                 },
                 {
                     id: 9,
@@ -247,6 +291,24 @@ export default createStore({
                         "/publicImg/nazakaz/105/1-4.jpg",
                     ],
                     category: "nazakaz",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В)",
+                            value: "3850х400х1800",
+                        },
+                        {
+                            title: "Фурнитура ящиков",
+                            value: "Boyrd",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "70 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 10,
@@ -258,6 +320,24 @@ export default createStore({
                         "/publicImg/nazakaz/106/1-2.jpg",
                     ],
                     category: "nazakaz",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В)",
+                            value: "3850х600х2600",
+                        },
+                        {
+                            title: "Фурнитура ящиков",
+                            value: "Boyrd",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "90 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 11,
@@ -270,6 +350,24 @@ export default createStore({
                         "/publicImg/nazakaz/107/1-3.jpg",
                     ],
                     category: "nazakaz",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В)",
+                            value: "2400х400х2000",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyrd",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "50 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 12,
@@ -283,6 +381,24 @@ export default createStore({
                         "/publicImg/nazakaz/108/1-4.jpg",
                     ],
                     category: "nazakaz",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В)",
+                            value: "4000х500х2660",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyrd",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "150 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 13,
@@ -294,6 +410,24 @@ export default createStore({
                         "/publicImg/nazakaz/109/1-2.jpg",
                     ],
                     category: "nazakaz",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyrd",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В)",
+                            value: "5000х600х2600",
+                        },
+                        {
+                            title: "Стоимость",
+                            value: "140 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 14,
@@ -305,6 +439,24 @@ export default createStore({
                         "/publicImg/nazakaz/110/1-2.jpg",
                     ],
                     category: "nazakaz",
+                    info: [
+                        {
+                            title: "Корпус",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "МДФ эмаль 16мм",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В)",
+                            value: "1000х500х2700",
+                        },
+                        {
+                            title: "Стоимость",
+                            value: "45 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 15,
@@ -322,6 +474,24 @@ export default createStore({
                         "/publicImg/nazakaz/111/1-8.jpg",
                     ],
                     category: "nazakaz",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фурнитура",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В)",
+                            value: "4000х500х2700",
+                        },
+                        {
+                            title: "Стоимость",
+                            value: "180 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 16,
@@ -339,6 +509,24 @@ export default createStore({
                         "/publicImg/nazakaz/112/1-8.jpg",
                     ],
                     category: "nazakaz",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм, 25мм",
+                        },
+                        {
+                            title: "Фурнитура",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В)",
+                            value: "6000х500х2700",
+                        },
+                        {
+                            title: "Стоимость",
+                            value: "220 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 17,
@@ -353,6 +541,24 @@ export default createStore({
                         "/publicImg/nazakaz/113/1-5.jpg",
                     ],
                     category: "nazakaz",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм, 25мм",
+                        },
+                        {
+                            title: "Фурнитура",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В)",
+                            value: "6000х500х2700",
+                        },
+                        {
+                            title: "Стоимость",
+                            value: "220 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 18,
@@ -367,6 +573,28 @@ export default createStore({
                         "/publicImg/nazakaz/114/1-5.jpg",
                     ],
                     category: "nazakaz",
+                    info: [
+                        {
+                            title: "Корпус",
+                            value: "ЛДСП Egger 16мм, 25мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "Эмаль 18 мм",
+                        },
+                        {
+                            title: "Фурнитура",
+                            value: "Blum",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "1000х500х2500",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "97 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 19,
@@ -385,6 +613,28 @@ export default createStore({
                         "/publicImg/nazakaz/115/1-9.jpg",
                     ],
                     category: "nazakaz",
+                    info: [
+                        {
+                            title: "Корпус",
+                            value: "ЛДСП Egger 16мм, 25мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "Эмаль 18 мм",
+                        },
+                        {
+                            title: "Фурнитура",
+                            value: "Blum",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "3000х300х1400",
+                        },
+                        {
+                            title: "Стоимость: ",
+                            value: "110 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 20,
@@ -401,6 +651,28 @@ export default createStore({
                         "/publicImg/nazakaz/116/1-7.jpg",
                     ],
                     category: "nazakaz",
+                    info: [
+                        {
+                            title: "Корпус",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "Эмаль 18 мм",
+                        },
+                        {
+                            title: "Фурнитура",
+                            value: "Blum",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "3500х500х2800",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "280 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 21,
@@ -417,6 +689,24 @@ export default createStore({
                         "/publicImg/nazakaz/117/1-7.jpg",
                     ],
                     category: "nazakaz",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм, 38мм",
+                        },
+                        {
+                            title: "Фурнитура",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "3000х500х2800",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "120 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 22,
@@ -432,6 +722,28 @@ export default createStore({
                         "/publicImg/nazakaz/102/1-6.jpg",
                     ],
                     category: "nazakaz",
+                    info: [
+                        {
+                            title: "Корпус",
+                            value: "ЛДСП Egger 16мм, 25мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "Эмаль 18 мм",
+                        },
+                        {
+                            title: "Фурнитура",
+                            value: "Blum",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "2000х500х2500",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "147 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 23,
@@ -445,6 +757,28 @@ export default createStore({
                         "/publicImg/nazakaz/102/1-4.jpg",
                     ],
                     category: "nazakaz",
+                    info: [
+                        {
+                            title: "Корпус",
+                            value: "ЛДСП Egger 16мм, 25мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "Эмаль 18 мм",
+                        },
+                        {
+                            title: "Фурнитура",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "3000х500х2700",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "170 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 24,
@@ -458,6 +792,32 @@ export default createStore({
                         "/publicImg/nazakaz/102/1-4.jpg",
                     ],
                     category: "nazakaz",
+                    info: [
+                        {
+                            title: "Корпус",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "МДФ AGT 18 мм",
+                        },
+                        {
+                            title: "Фурнитура",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Столешница",
+                            value: "Камень",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "1500х500х1000",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "78 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 25,
@@ -475,6 +835,28 @@ export default createStore({
                         "/publicImg/nazakaz/102/1-8.jpg",
                     ],
                     category: "nazakaz",
+                    info: [
+                        {
+                            title: "Корпус",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "Алюминий",
+                        },
+                        {
+                            title: "Фурнитура",
+                            value: "Blum",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "3500х500х2700",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "280 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 26,
@@ -492,6 +874,28 @@ export default createStore({
                         "/publicImg/nazakaz/102/1-8.jpg",
                     ],
                     category: "nazakaz",
+                    info: [
+                        {
+                            title: "Корпус",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады ",
+                            value: "Алюминий",
+                        },
+                        {
+                            title: "Фурнитура",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "3000х500х2600",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "220 000р.",
+                        },
+                    ],
                 },
             ],
             garderobnaya: [
@@ -504,6 +908,24 @@ export default createStore({
                         "/publicImg/garderobnaya/100/1-1.jpg",
                     ],
                     category: "garderobnaya",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "6000х600х2700",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyrd",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "90 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 28,
@@ -517,6 +939,24 @@ export default createStore({
                         "/publicImg/garderobnaya/101/1-4.jpg",
                     ],
                     category: "garderobnaya",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "3000х600х2700",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyrd",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "25 000р.",
+                        },
+                    ],
                 },
             ],
             kupe: [
@@ -531,6 +971,24 @@ export default createStore({
                         "/publicImg/kupe/102/1-3.jpg",
                     ],
                     category: "kupe",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "2000х600х2700",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "BLUM",
+                        },
+                        {
+                            title: "Стоимость",
+                            value: "134 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 30,
@@ -544,6 +1002,24 @@ export default createStore({
                         "/publicImg/kupe/103/1-4.jpg",
                     ],
                     category: "kupe",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "1500х600х2600",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Стоимость",
+                            value: "34 900р.",
+                        },
+                    ],
                 },
                 {
                     id: 31,
@@ -554,6 +1030,28 @@ export default createStore({
                         "/publicImg/kupe/104/1-1.jpg",
                     ],
                     category: "kupe",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Профиль:",
+                            value: "Aristo",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В)",
+                            value: "2400х600х2588",
+                        },
+                        {
+                            title: "Стоимость",
+                            value: "90 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 32,
@@ -565,6 +1063,28 @@ export default createStore({
                         "/publicImg/kupe/106/1-2.jpg",
                     ],
                     category: "kupe",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Профиль:",
+                            value: "Aristo",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В)",
+                            value: "1200х1000х2600",
+                        },
+                        {
+                            title: "Стоимость",
+                            value: "70 000р",
+                        },
+                    ],
                 },
                 {
                     id: 33,
@@ -580,6 +1100,28 @@ export default createStore({
                         "/publicImg/kupe/108/1-6.jpg",
                     ],
                     category: "kupe",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фурнитура ящиков",
+                            value: "Boyrd",
+                        },
+                        {
+                            title: "Фурнитура петель",
+                            value: "Blum",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "3000х600х2700",
+                        },
+                        {
+                            title: "Стоимость",
+                            value: "90 600р.",
+                        },
+                    ],
                 },
                 {
                     id: 34,
@@ -591,6 +1133,24 @@ export default createStore({
                         "/publicImg/kupe/110/1-2.jpg",
                     ],
                     category: "kupe",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "4000х600х2700",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "120 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 35,
@@ -605,6 +1165,28 @@ export default createStore({
                         "/publicImg/kupe/111/1-5.jpg",
                     ],
                     category: "kupe",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Алюминиевый профиль",
+                            value: "Aristo",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "2000х700х2800",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "78 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 36,
@@ -618,6 +1200,28 @@ export default createStore({
                         "/publicImg/kupe/112/1-4.jpg",
                     ],
                     category: "kupe",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Алюминиевый профиль",
+                            value: "Aristo",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "4000х600х2600",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "200 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 37,
@@ -636,6 +1240,28 @@ export default createStore({
                         "/publicImg/kupe/113/1-9.jpg",
                     ],
                     category: "kupe",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Алюминиевый профиль",
+                            value: "Aristo",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "1500х600х2700",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "120 000р.",
+                        },
+                    ],
                 },
             ],
             swing: [
@@ -650,6 +1276,24 @@ export default createStore({
                         "/publicImg/swing/101/1-3.jpg",
                     ],
                     category: "swing",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "4000х600х2700",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "BLUM",
+                        },
+                        {
+                            title: "Стоимость",
+                            value: "116 500р.",
+                        },
+                    ],
                 },
                 {
                     id: 39,
@@ -665,10 +1309,28 @@ export default createStore({
                         "/publicImg/swing/102/1-6.jpg",
                     ],
                     category: "swing",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyrd",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "3700х500х2500",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "120 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 40,
-                    title: "Шкаф Красногорск",
+                    title: "Шкаф распашной Красногорск",
                     img: "/publicImg/swing/103/1-0.jpg",
                     imgList: [
                         "/publicImg/swing/103/1-0.jpg",
@@ -679,6 +1341,28 @@ export default createStore({
                         "/publicImg/swing/103/1-5.jpg",
                     ],
                     category: "swing",
+                    info: [
+                        {
+                            title: "Корпус",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "МДФ AGT 18мм",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "3500х500х2600",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "220 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 41,
@@ -690,6 +1374,28 @@ export default createStore({
                         "/publicImg/swing/104/1-2.jpg",
                     ],
                     category: "swing",
+                    info: [
+                        {
+                            title: "Корпус",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "2000х500х2600",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "150 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 42,
@@ -700,6 +1406,28 @@ export default createStore({
                         "/publicImg/swing/105/1-1.jpg",
                     ],
                     category: "swing",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фурнитура ящиков",
+                            value: "Boyrd",
+                        },
+                        {
+                            title: "Фурнитура петель",
+                            value: "Blum",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В)",
+                            value: "2700х500х2550",
+                        },
+                        {
+                            title: "Стоимость",
+                            value: "116 500р",
+                        },
+                    ],
                 },
                 {
                     id: 43,
@@ -716,6 +1444,28 @@ export default createStore({
                         "/publicImg/swing/106/1-7.jpg",
                     ],
                     category: "swing",
+                    info: [
+                        {
+                            title: "Корпус",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады ",
+                            value: "МДФ эмаль",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "5500х600х2800",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "350 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 45,
@@ -729,6 +1479,24 @@ export default createStore({
                         "/publicImg/kupe/107/1-4.jpg",
                     ],
                     category: "swing",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "5000х600х2600",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "120 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 45,
@@ -741,6 +1509,24 @@ export default createStore({
                         "/publicImg/kupe/109/1-3.jpg",
                     ],
                     category: "swing",
+                    info: [
+                        {
+                            title: "Корпус и фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "5000х600х2700",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "150 000р.",
+                        },
+                    ],
                 },
             ],
             kuhni: [
@@ -755,6 +1541,32 @@ export default createStore({
                         "/publicImg/kuhni/101/1-3.jpg",
                     ],
                     category: "kuhni",
+                    info: [
+                        {
+                            title: "Корпус:",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады:",
+                            value: "Rehau 22мм",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Blum",
+                        },
+                        {
+                            title: "Алюминиевый профиль:",
+                            value: "Golight",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "4000х600х2700",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "380 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 47,
@@ -768,6 +1580,32 @@ export default createStore({
                         "/publicImg/kuhni/102/1-4.jpg",
                     ],
                     category: "kuhni",
+                    info: [
+                        {
+                            title: "Корпус",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "МДФ AGT 19мм",
+                        },
+                        {
+                            title: "Столешница",
+                            value: "Камень Акрил 38мм",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Blum",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "3,5 п /м",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "292 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 48,
@@ -780,6 +1618,32 @@ export default createStore({
                         "/publicImg/kuhni/103/1-3.jpg",
                     ],
                     category: "kuhni",
+                    info: [
+                        {
+                            title: "Корпус",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Столешница",
+                            value: "ЛДСП 38мм",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyrd",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "3,5 п /м",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "93 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 49,
@@ -793,6 +1657,32 @@ export default createStore({
                         "/publicImg/kuhni/104/1-4.jpg",
                     ],
                     category: "kuhni",
+                    info: [
+                        {
+                            title: "Корпус",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "МДФ пленка soft touch 19мм",
+                        },
+                        {
+                            title: "Столешница",
+                            value: "ЛДСП 38мм",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyrd",
+                        },
+                        {
+                            title: "Габариты:",
+                            value: "5,2 п /м",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "284 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 50,
@@ -806,6 +1696,32 @@ export default createStore({
                         "/publicImg/kuhni/105/1-4.jpg",
                     ],
                     category: "kuhni",
+                    info: [
+                        {
+                            title: "Корпус",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "МДФ AGT 19мм",
+                        },
+                        {
+                            title: "Столешница",
+                            value: "Камень Акрил 38мм",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Blum",
+                        },
+                        {
+                            title: "Габариты:",
+                            value: "7,2 п /м",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "484 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 51,
@@ -819,6 +1735,32 @@ export default createStore({
                         "/publicImg/kuhni/106/1-4.jpg",
                     ],
                     category: "kuhni",
+                    info: [
+                        {
+                            title: "Корпус",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "МДФ AGT 19мм",
+                        },
+                        {
+                            title: "Столешница",
+                            value: "Камень ЛДСП 38мм",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Blum",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "5 п /м",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "299000р.",
+                        },
+                    ],
                 },
                 {
                     id: 52,
@@ -832,6 +1774,32 @@ export default createStore({
                         "/publicImg/kuhni/107/1-4.jpg",
                     ],
                     category: "kuhni",
+                    info: [
+                        {
+                            title: "Корпус",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "МДФ Rehau 19мм",
+                        },
+                        {
+                            title: "Столешница",
+                            value: "ЛДСП 38мм",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Blum",
+                        },
+                        {
+                            title: "Габариты:",
+                            value: "4,8 п /м",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "188 300р.",
+                        },
+                    ],
                 },
                 {
                     id: 53,
@@ -844,6 +1812,28 @@ export default createStore({
                         "/publicImg/kuhni/108/1-3.jpg",
                     ],
                     category: "kuhni",
+                    info: [
+                        {
+                            title: "Корпус:",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады:",
+                            value: "ЛДСП Lamarti 18мм",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "4200х600х2700",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "170 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 54,
@@ -857,6 +1847,28 @@ export default createStore({
                         "/publicImg/kuhni/109/1-4.jpg",
                     ],
                     category: "kuhni",
+                    info: [
+                        {
+                            title: "Корпус:",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады:",
+                            value: "AGT 19мм",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "6500х600х2800",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "330 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 55,
@@ -869,6 +1881,28 @@ export default createStore({
                         "/publicImg/kuhni/110/1-3.jpg",
                     ],
                     category: "kuhni",
+                    info: [
+                        {
+                            title: "Корпус:",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады:",
+                            value: "AGT 19мм",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "3000х600х2800",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "160 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 56,
@@ -882,6 +1916,32 @@ export default createStore({
                         "/publicImg/kuhni/111/1-4.jpg",
                     ],
                     category: "kuhni",
+                    info: [
+                        {
+                            title: "Корпус",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "МДФ AGT 19мм",
+                        },
+                        {
+                            title: "Столешница",
+                            value: "ЛДСП 38мм",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Blum",
+                        },
+                        {
+                            title: "Габариты:",
+                            value: "2,5 п /м",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "125 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 57,
@@ -892,6 +1952,28 @@ export default createStore({
                         "/publicImg/kuhni/112/1-1.jpg",
                     ],
                     category: "kuhni",
+                    info: [
+                        {
+                            title: "Корпус ",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "МДФ Alternative 20 мм",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "3500х600х2700",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "135 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 58,
@@ -910,6 +1992,28 @@ export default createStore({
                         "/publicImg/kuhni/113/1-9.jpg",
                     ],
                     category: "kuhni",
+                    info: [
+                        {
+                            title: "Корпус ",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "МДФ AGT 19мм",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "3500х600х2700",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "220 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 59,
@@ -923,6 +2027,32 @@ export default createStore({
                         "/publicImg/kuhni/114/1-4.jpg",
                     ],
                     category: "kuhni",
+                    info: [
+                        {
+                            title: "Корпус ",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "МДФ эмаль 20мм",
+                        },
+                        {
+                            title: "Столешница",
+                            value: "ЛДСП 38мм",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Blum",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "2500х600х2700",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "240 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 60,
@@ -942,6 +2072,36 @@ export default createStore({
                         "/publicImg/kuhni/115/1-10.jpg",
                     ],
                     category: "kuhni",
+                    info: [
+                        {
+                            title: "Корпус ",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "МДФ эмаль 20мм",
+                        },
+                        {
+                            title: "Столешница",
+                            value: "Камень",
+                        },
+                        {
+                            title: "Стеновая панель",
+                            value: "Камень",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Blum",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "5000х600х2700",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "600 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 61,
@@ -957,6 +2117,32 @@ export default createStore({
                         "/publicImg/kuhni/116/1-6.jpg",
                     ],
                     category: "kuhni",
+                    info: [
+                        {
+                            title: "Корпус ",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "МДФ AGT 19мм",
+                        },
+                        {
+                            title: "Столешница",
+                            value: "ЛДСП 38мм",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "3500х600х2700",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "180 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 62,
@@ -983,6 +2169,32 @@ export default createStore({
                         "/publicImg/kuhni/117/1-17.jpg",
                     ],
                     category: "kuhni",
+                    info: [
+                        {
+                            title: "Корпус ",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "МДФ AGT 19мм",
+                        },
+                        {
+                            title: "Столешница",
+                            value: "ЛДСП 38мм",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "5500х600х2800",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "250 000р.",
+                        },
+                    ],
                 },
                 {
                     id: 63,
@@ -1013,6 +2225,36 @@ export default createStore({
                         "/publicImg/kuhni/118/1-21.jpg",
                     ],
                     category: "kuhni",
+                    info: [
+                        {
+                            title: "Корпус ",
+                            value: "ЛДСП Egger 16мм",
+                        },
+                        {
+                            title: "Фасады",
+                            value: "МДФ эмаль 20мм",
+                        },
+                        {
+                            title: "Столешница",
+                            value: "Камень",
+                        },
+                        {
+                            title: "Стеновая панель",
+                            value: "Камень",
+                        },
+                        {
+                            title: "Фурнитура:",
+                            value: "Boyard",
+                        },
+                        {
+                            title: "Габариты (Ш-Г-В):",
+                            value: "5000х600х2700",
+                        },
+                        {
+                            title: "Стоимость:",
+                            value: "450 000р.",
+                        },
+                    ],
                 },
             ],
         },

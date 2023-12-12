@@ -96,6 +96,11 @@ const routes = [
         name: "Promo",
         component: () => import("../views/Promo.vue"),
     },
+    {
+        path: "/reviews",
+        name: "Reviews",
+        component: () => import("../views/Reviews.vue"),
+    },
 ];
 
 const router = createRouter({
@@ -104,7 +109,7 @@ const router = createRouter({
     scrollBehavior(to, from, savedPosition) {
         if (to.hash) {
             return window.scrollTo({
-                top: document.querySelector(to.hash).offsetTop,
+                top: document.querySelector(to.hash)?.offsetTop,
                 behavior: "smooth",
             });
         } else {
