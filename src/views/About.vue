@@ -99,7 +99,7 @@
                     выгодные условия сотрудничества.
                 </p>
                 <div class="centered">
-                    <a :href="'tel:' + this.$store.state.tel" class="see-more"
+                    <a :href="'tel:' + this.$store.state.tel" class="btn"
                         >Узнать больше</a
                     >
                 </div>

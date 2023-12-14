@@ -59,16 +59,21 @@
                         <a
                             class="green"
                             href="https://www.instagram.com/mebel_maximum_uyt"
-                            ><img src="@/assets/img/stock/instagram.svg" alt=""
+                            ><img src="@/assets/img/stock/instagram.svg" alt="Инстаграм"
                         /></a>
                         <a class="green" href="https://vk.com/uyutmaksimum"
-                            ><img src="@/assets/img/stock/vk.svg" alt=""
+                            ><img src="@/assets/img/stock/vk.svg" alt="ВК"
                         /></a>
                         <a class="green" href="https://t.me/@uyutmru"
-                            ><img src="@/assets/img/stock/telegram.svg" alt=""
+                            ><img src="@/assets/img/stock/telegram.svg" alt="Телеграм"
                         /></a>
                         <a class="green" href="https://wa.me/+79263526185"
-                            ><img src="@/assets/img/stock/whatsapp.svg" alt=""
+                            ><img src="@/assets/img/stock/whatsapp.svg" alt="Вотсап"
+                        /></a>
+                        <a class="green" :href="this.$store.state.youtube"
+                            ><img
+                                src="@/assets/img/stock/youtube.svg"
+                                alt="Ютуб"
                         /></a>
                     </div>
                 </div>
@@ -89,12 +94,18 @@
                     }"
                     >{{ category.title }}</router-link
                 >
-                <!-- <router-link to="/matras/index.html">Матрасы</router-link> -->
+                <router-link
+                    :to="{ name: 'Mattresses' }"
+                    :class="{
+                        'router-link-active': isRouteActive('/mattresses'),
+                    }"
+                    >Матрасы</router-link
+                >
                 <router-link :to="{ name: 'Videos' }">Видео</router-link>
-                <router-link :to="{name: 'About'}">О нас</router-link>
-                <router-link :to="{name: 'Promo'}">Акции</router-link>
-                <router-link :to="{name: 'Reviews'}">Отзывы</router-link>
-                <!-- <router-link to="/kredit.html">Кредит</router-link> -->
+                <router-link :to="{ name: 'About' }">О нас</router-link>
+                <router-link :to="{ name: 'Promo' }">Акции</router-link>
+                <router-link :to="{ name: 'Reviews' }">Отзывы</router-link>
+                <router-link :to="{ name: 'Credit' }">Кредит</router-link>
             </nav>
         </div>
     </header>
@@ -107,6 +118,9 @@ export default {
         isRouteActive(routePath) {
             if (this.$route.name === "ProductDetails") {
                 return `/${this.$route.params.category}` === routePath;
+            }
+            if (this.$route.name === "MattressDetails") {
+                return `/mattresses` === routePath;
             }
         },
     },

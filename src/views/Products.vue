@@ -4,7 +4,7 @@
         <section class="products container">
             <Grid :list="listToShow" />
             <div class="centered">
-                <button class="see-more" @click="loadMore" v-if="showSeeMoreButton">
+                <button class="btn" @click="loadMore" v-if="showSeeMoreButton">
                     Загрузить еще
                 </button>
             </div>

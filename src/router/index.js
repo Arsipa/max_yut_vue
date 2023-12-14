@@ -77,6 +77,21 @@ const routes = [
         },
     },
     {
+        path: "/mattresses",
+        name: "Mattresses",
+        component: () => import("../views/Products.vue"),
+        props: {
+            title: "Матрасы",
+            img: "/publicImg/previewSections/mattresses.jpg",
+            category: "mattresses",
+        },
+    },
+    {
+        path: "/mattresses/:id",
+        name: "MattressDetails",
+        component: () => import("../views/MattressDetails.vue"),
+    },
+    {
         path: "/:category/:id",
         name: "ProductDetails",
         component: () => import("../views/ProductDetails.vue"),
@@ -100,6 +115,11 @@ const routes = [
         path: "/reviews",
         name: "Reviews",
         component: () => import("../views/Reviews.vue"),
+    },
+    {
+        path: "/credit",
+        name: "Credit",
+        component: () => import("../views/Credit.vue"),
     },
 ];
 

@@ -172,7 +172,7 @@
                             this.$store.state.certificates.length
                         "
                         @click="showMore('certificatesToShow', 'certificates')"
-                        class="see-more">
+                        class="btn">
                         Смотреть ещё
                     </button>
                 </div>
@@ -440,7 +440,7 @@ export default {
 .form-section {
     background: var(--green);
     padding: 50px 0;
-    margin-bottom: 0;
+    margin-bottom: -100px;
     color: white;
 }
 

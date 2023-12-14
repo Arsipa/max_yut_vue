@@ -24,7 +24,7 @@
                 >
                 <a class="youtube__link" :href="this.$store.state.youtube"
                     ><img
-                        src="@/assets/img/stock/youtube.svg"
+                        src="@/assets/img/stock/youtube-big.svg"
                         :alt="this.$store.state.youtube" />
                     <p>Канал Максимум Уют</p></a
                 >

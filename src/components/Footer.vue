@@ -1,9 +1,12 @@
 <template>
     <footer>
         <div class="footer__inner container">
-            <p class="address">
-                Адрес: {{ this.$store.state.address }}
-            </p>
+            <div>
+                <p class="address">Адрес: {{ this.$store.state.address }}</p>
+                <a href="/files/politica.pdf" target="_blank" class="file">
+                    Политика конфиденциальности
+                </a>
+            </div>
             <div class="contact-info">
                 <a
                     :href="`tel:${this.$store.state.tel}`"
@@ -19,21 +22,27 @@
                     <a
                         class="green"
                         href="https://www.instagram.com/mebel_maximum_uyt"
-                        ><img src="@/assets/img/stock/instagram.svg" alt=""
+                        ><img src="@/assets/img/stock/instagram.svg" alt="Инстаграм"
                     /></a>
                     <a class="green" href="https://vk.com/uyutmaksimum"
-                        ><img src="@/assets/img/stock/vk.svg" alt=""
+                        ><img src="@/assets/img/stock/vk.svg" alt="ВК"
                     /></a>
                     <a class="green" href="https://t.me/@uyutmru"
-                        ><img src="@/assets/img/stock/telegram.svg" alt=""
+                        ><img src="@/assets/img/stock/telegram.svg" alt="Телеграм"
                     /></a>
                     <a class="green" href="https://wa.me/+79263526185"
-                        ><img src="@/assets/img/stock/whatsapp.svg" alt=""
+                        ><img src="@/assets/img/stock/whatsapp.svg" alt="Вотсап"
+                    /></a>
+                    <a class="green" :href="this.$store.state.youtube"
+                        ><img src="@/assets/img/stock/youtube.svg" alt="Ютуб"
                     /></a>
                 </div>
             </div>
         </div>
-        <p class="copyright container">© Максимум Уют 2012 - {{ (new Date()).getUTCFullYear() }}. Все права защищены</p>
+        <p class="copyright container">
+            © Максимум Уют 2012 - {{ new Date().getUTCFullYear() }}. Все права
+            защищены
+        </p>
     </footer>
 </template>
 
@@ -45,7 +54,7 @@ export default {
 
 <style scoped>
 footer {
-    background: #343E40;
+    background: #161617;
     padding: 50px 0;
     margin-top: 100px;
 }
@@ -60,6 +69,14 @@ footer {
     max-width: 500px;
     font-weight: bold;
     color: white;
+    margin-bottom: 30px;
+}
+
+.file{
+    color: white;
+    opacity: 0.7;
+    text-decoration: underline;
+    font-size: 18px;
 }
 
 .contact-info {
@@ -88,14 +105,13 @@ footer {
     justify-content: center;
     width: 45px;
     height: 45px;
-    background: currentColor;
 }
 
 .socials a img {
     filter: invert(1);
 }
 
-.copyright{
+.copyright {
     font-size: 20px;
     opacity: 0.5;
     text-align: center;
