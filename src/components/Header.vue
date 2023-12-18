@@ -2,40 +2,30 @@
     <header>
         <div class="header__top">
             <div class="container header__top-inner">
-                <!-- <div class="header__top-block">
+                <router-link :to="{ name: 'Index', hash: '#form' }" class="dotted">
                     <img src="@/assets/img/stock/phone.svg" alt="" />
-                    <router-link to="/call-me.html" class="dotted">
-                        Заказать звонок
-                    </router-link>
-                </div>
-                <div class="header__top-block">
+                    <span>Заказать звонок</span>
+                </router-link>
+                <router-link :to="{ name: 'About', hash: '#measuring' }" class="item">
+                    <img src="@/assets/img/stock/tape.svg" alt="" />
+                    <span>Замер</span>
+                </router-link>
+                <router-link :to="{ name: 'About', hash: '#delivery' }" class="item">
+                    <img src="@/assets/img/stock/delivery.svg" alt="" />
+                    <span>Доставка</span>
+                </router-link>
+                <router-link :to="{ name: 'About', hash: '#montage' }" class="item">
+                    <img src="@/assets/img/stock/wrench.svg" alt="" />
+                    <span>Монтаж</span>
+                </router-link>
+                <!-- <router-link :to="{ name: 'Calculator' }" class="item">
                     <img src="@/assets/img/stock/calc.svg" alt="" />
-                    <router-link
-                        to="/kalkulyator-dverej-kupe.html"
-                        class="dotted">
-                        Калькулятор дверей-купе
-                    </router-link>
-                </div>
-                <div class="header__top-block">
-                    <img src="@/assets/img/stock/roulette.svg" alt="" />
-                    <router-link to="/zamer.html#zamer"> Замер </router-link>
-                </div>
-                <div class="header__top-block">
-                    <img src="@/assets/img/stock/car.svg" alt="" />
-                    <router-link to="/zamer.html#delivery">
-                        Доставка
-                    </router-link>
-                </div>
-                <div class="header__top-block">
-                    <img src="@/assets/img/stock/montage.svg" alt="" />
-                    <router-link to="/zamer.html#montage"> Монтаж </router-link>
-                </div>
-                <div class="header__top-block">
+                    <span>Калькулятор</span>
+                </router-link> -->
+                <router-link :to="{ name: '3d' }">
                     <img src="@/assets/img/stock/3d.svg" alt="" />
-                    <router-link to="/besplatnyij-3d-dizajn-proekt.html">
-                        3D проект
-                    </router-link>
-                </div> -->
+                    <span>3D проект</span>
+                </router-link>
             </div>
         </div>
         <div class="header__middle bordered">
@@ -59,16 +49,22 @@
                         <a
                             class="green"
                             href="https://www.instagram.com/mebel_maximum_uyt"
-                            ><img src="@/assets/img/stock/instagram.svg" alt="Инстаграм"
+                            ><img
+                                src="@/assets/img/stock/instagram.svg"
+                                alt="Инстаграм"
                         /></a>
                         <a class="green" href="https://vk.com/uyutmaksimum"
                             ><img src="@/assets/img/stock/vk.svg" alt="ВК"
                         /></a>
                         <a class="green" href="https://t.me/@uyutmru"
-                            ><img src="@/assets/img/stock/telegram.svg" alt="Телеграм"
+                            ><img
+                                src="@/assets/img/stock/telegram.svg"
+                                alt="Телеграм"
                         /></a>
                         <a class="green" href="https://wa.me/+79263526185"
-                            ><img src="@/assets/img/stock/whatsapp.svg" alt="Вотсап"
+                            ><img
+                                src="@/assets/img/stock/whatsapp.svg"
+                                alt="Вотсап"
                         /></a>
                         <a class="green" :href="this.$store.state.youtube"
                             ><img
@@ -136,21 +132,36 @@ export default {
 .header__top-inner {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 25px;
+    justify-content: center;
+    gap: 30px;
 }
-.header__top-block {
+.header__top-inner a {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-.header__top-block a {
-    border-bottom: 1px dotted transparent;
     color: #000;
-    font-size: 12px;
+    font-size: 18px;
 }
-.header__top-block a.dotted {
-    border-bottom: 1px dotted #000;
+
+.header__top-inner a img {
+    width: 30px;
+    height: 30px;
+}
+
+.header__top-inner a.dotted span {
+    background-image: linear-gradient(
+        to right,
+        #000 10%,
+        rgba(255, 255, 255, 0) 0%
+    );
+    background-position: bottom;
+    background-size: 7px 2px;
+    transition: 0.3s;
+    background-repeat: repeat-x;
+}
+
+.header__top-inner a.dotted:hover span {
+    background-size: 9px 2px;
 }
 
 .header__middle {

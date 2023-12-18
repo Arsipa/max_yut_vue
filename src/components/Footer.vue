@@ -1,49 +1,61 @@
 <template>
-    <footer>
-        <div class="footer__inner container">
-            <div>
-                <p class="address">Адрес: {{ this.$store.state.address }}</p>
-                <a href="/files/politica.pdf" target="_blank" class="file">
-                    Политика конфиденциальности
-                </a>
-            </div>
-            <div class="contact-info">
-                <a
-                    :href="`tel:${this.$store.state.tel}`"
-                    class="contact blue bold"
-                    >{{ this.$store.state.tel }}</a
-                >
-                <a
-                    :href="`mailto:${this.$store.state.email}`"
-                    class="contact blue bold"
-                    >{{ this.$store.state.email }}</a
-                >
-                <div class="socials">
+    <div>
+        <footer>
+            <div class="footer__inner container">
+                <div>
+                    <p class="address">
+                        Адрес: {{ this.$store.state.address }}
+                    </p>
+                    <a href="/files/politica.pdf" target="_blank" class="file">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+                <div class="contact-info">
                     <a
-                        class="green"
-                        href="https://www.instagram.com/mebel_maximum_uyt"
-                        ><img src="@/assets/img/stock/instagram.svg" alt="Инстаграм"
-                    /></a>
-                    <a class="green" href="https://vk.com/uyutmaksimum"
-                        ><img src="@/assets/img/stock/vk.svg" alt="ВК"
-                    /></a>
-                    <a class="green" href="https://t.me/@uyutmru"
-                        ><img src="@/assets/img/stock/telegram.svg" alt="Телеграм"
-                    /></a>
-                    <a class="green" href="https://wa.me/+79263526185"
-                        ><img src="@/assets/img/stock/whatsapp.svg" alt="Вотсап"
-                    /></a>
-                    <a class="green" :href="this.$store.state.youtube"
-                        ><img src="@/assets/img/stock/youtube.svg" alt="Ютуб"
-                    /></a>
+                        :href="`tel:${this.$store.state.tel}`"
+                        class="contact blue bold"
+                        >{{ this.$store.state.tel }}</a
+                    >
+                    <a
+                        :href="`mailto:${this.$store.state.email}`"
+                        class="contact blue bold"
+                        >{{ this.$store.state.email }}</a
+                    >
+                    <div class="socials">
+                        <a
+                            class="green"
+                            href="https://www.instagram.com/mebel_maximum_uyt"
+                            ><img
+                                src="@/assets/img/stock/instagram.svg"
+                                alt="Инстаграм"
+                        /></a>
+                        <a class="green" href="https://vk.com/uyutmaksimum"
+                            ><img src="@/assets/img/stock/vk.svg" alt="ВК"
+                        /></a>
+                        <a class="green" href="https://t.me/@uyutmru"
+                            ><img
+                                src="@/assets/img/stock/telegram.svg"
+                                alt="Телеграм"
+                        /></a>
+                        <a class="green" href="https://wa.me/+79263526185"
+                            ><img
+                                src="@/assets/img/stock/whatsapp.svg"
+                                alt="Вотсап"
+                        /></a>
+                        <a class="green" :href="this.$store.state.youtube"
+                            ><img
+                                src="@/assets/img/stock/youtube.svg"
+                                alt="Ютуб"
+                        /></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <p class="copyright container">
-            © Максимум Уют 2012 - {{ new Date().getUTCFullYear() }}. Все права
-            защищены
-        </p>
-    </footer>
+            <p class="copyright container">
+                © Максимум Уют 2012 - {{ new Date().getUTCFullYear() }}. Все
+                права защищены
+            </p>
+        </footer>
+    </div>
 </template>
 
 <script>
@@ -72,7 +84,7 @@ footer {
     margin-bottom: 30px;
 }
 
-.file{
+.file {
     color: white;
     opacity: 0.7;
     text-decoration: underline;

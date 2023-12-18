@@ -17,14 +17,16 @@
                 </div>
             </div>
         </section>
+        <CallMeForm />
     </div>
 </template>
 <script>
 import PreviewSection from "@/components/PreviewSection.vue";
+import CallMeForm from "@/components/CallMeForm.vue";
 
 export default {
     name: "Promo",
-    components: { PreviewSection },
+    components: { PreviewSection, CallMeForm },
     data() {
         return {
             promoList: [

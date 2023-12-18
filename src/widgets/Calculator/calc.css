@@ -1,0 +1,470 @@
+﻿
+@font-face {
+    font-family: BebasNeueBold; /* Имя шрифта */
+    src: url(BebasNeueBold.otf.odft)/*tpa=http://foramebel.infowaf4.bget.ru/fonts/BebasNeueBold.otf*/; /* Путь к файлу со шрифтом */
+   }
+#kalkuljator-shkafa-kupe-container{
+    margin: 61px 15px 0px 16px;
+    border: 1px solid #bfbfbf;
+    font-family: Arial;
+}
+#kalkuljator-shkafa-kupe-container p{
+    margin:0;
+    padding:0;
+}
+#kalkuljator-shkafa-kupe-container hr{
+    border: none;
+    height: 1px;
+    background-color: #c9c9c9;
+    margin: 0 29px 0 25px;
+}
+.breadcrumbs{
+    font-size: 14px;
+    margin-top: 9px;
+}
+.ksk-title{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0 15px 0;
+}
+.ksk-section{
+    
+}
+.ksk-section.step-one{
+    margin-bottom: 39px;
+}
+.ksk-section.step-two{
+    margin-bottom: 16px;
+}
+.ksk-section-title{
+    color: white;
+    font-size: 16px;
+    vertical-align: middle;
+}
+.ksk-section-title.blue{
+    background: #3E92A3;
+}
+.ksk-section-title.grey{
+    background: #9b9b9b;
+}
+.ksk-section-title-num{
+    float:left;
+    height: 34px;
+    margin-right: 14px;
+    margin-left: 6px;
+    display:inline-block;
+    font-family: BebasNeueBold;
+    font-size: 45px;
+    width: 31px;
+    top: -8px;
+    font-weight: bold;
+    position: relative;
+}
+.ksk-section-title-num.one{
+    color: #fff;
+}
+.ksk-section-title-num.two{
+    color: #fff;
+}
+.ksk-section-title-content{
+    display:inline-block;
+    line-height: 34px;
+    font-size: 16px;
+}
+.ksk-section-content{
+    /*display: table;
+    cellpadding: 27px;*/
+}
+.ksk-input-row{
+    /*display: table-row;*/
+    margin: 27px;
+    margin-left: 61px;
+}
+.ksk-input-row.one{
+    /*display: table-row;*/
+    margin-top: 25px;
+}
+.ksk-input-row.two{
+    /*display: table-row;*/
+    margin-top: 17px;
+    margin-bottom: 39px;
+}
+.ksk-input-col{
+    position: relative;
+    display: inline-block;
+    margin-left: 107px;
+    /*display: table-cell;*/
+}
+.ksk-input-col:first-child{
+    margin-left:0;
+}
+.ksk-input-label{
+    margin-bottom: 9px;
+    font-size: 14px;
+    color: #474747;
+}
+.ksk-input-img{
+    position: absolute;
+    background: url(calc_inputs_sprite.gif)/*tpa=http://foramebel.infowaf4.bget.ru/images/calc_inputs_sprite.gif*/;
+    float: left;
+    left: -38px;
+}
+.ksk-input-img.doorway_height{
+    width: 34px;
+    height: 31px;
+}
+.ksk-input-img.doorway_width{
+    background-position-x: -33px;
+    width: 27px;
+    height: 38px;
+}
+.ksk-input-img.profile_brand{
+    background-position-x: -60px;
+    width: 27px;
+    height: 38px;
+    top: 29px;
+    left: -37px;
+}
+.ksk-input-img.profile_color{
+    background-position-x: -85px;
+    width: 27px;
+    height: 25px;
+    top: 31px;
+    left: -36px;
+}
+.ksk-input-img.doors_number{
+    background-position-x: -113px;
+    width: 33px;
+    height: 27px;
+    top: 29px;
+    left: -43px;
+}
+#kalkuljator-shkafa-kupe-container input[type="text"],#kalkuljator-shkafa-kupe-container select{
+    width: 190px;
+    height: 36px;
+    top: -2px;
+    vertical-align: center;
+    position: relative;
+    padding-left: 18px;
+    padding-bottom: 4px;
+    font-size: 14px;
+    outline: none;
+}
+#kalkuljator-shkafa-kupe-container select[disabled],#kalkuljator-shkafa-kupe-container input[disabled]{
+    background-color: #ebebe4;
+}
+#kalkuljator-shkafa-kupe-container input[type="radio"]{
+    display: none;
+}
+.ksk-input-col.radio{
+    top: 7px;
+    margin-left: 65px;
+}
+.ksk-radio{
+    width: 232px;
+}
+.ksk-radio div{
+    display: inline-block;
+}
+.ksk-radio label{
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 29px;
+    color: #474747;
+    top: 6px;
+}
+.ksk-radio label:before {
+	content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 10px;
+    margin-right: 10px;
+    position: absolute;
+    left: -28px;
+    bottom: 1px;
+    border: 1px solid grey;
+}
+#kalkuljator-shkafa-kupe-container input[disabled] + label:before {
+    background-color: #ebebe4;
+}
+.ksk-radio div input[type=radio]:checked + label:before{
+    background: url(radio-round.gif)/*tpa=http://foramebel.infowaf4.bget.ru/images/radio-round.gif*/ no-repeat 2px 2px;
+}
+.ksk-radio label[for="delivery"]{
+    left: 24px;
+}
+.ksk-radio label[for="takeIt"]{
+    top: 19px;
+}
+.ksk-note{
+    color: #9f9f9f;
+    margin-top: 9px !important;
+    margin-left: 25px !important;
+    font-size: 12px;
+}
+#calcButton{
+    display: inline-block;
+    padding: 12px 0px;
+    text-decoration: none;
+    color: white;
+    width: 280px;
+    background-color: #13ad36;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 25px;
+    border: none;
+    cursor: pointer;
+}
+.ksk-doors {
+    display:none;
+    position: relative;
+    margin-top: 65px;
+    margin-left: 89px;
+}
+.ksk-arrows.horisontal {
+    position: absolute;
+    top: -17px;
+    left: 12px;
+}
+.ksk-arrows.vertical{
+    position: absolute;
+    left: -14px;
+    top: 6px;
+}
+.ksk-arrow-horisontal-line {
+    width: 307px;
+    height: 1px;
+    background-color: #a6a6a6;
+}
+.ksk-arrow-vertical-line{
+    width: 1px;
+    background: #a6a6a6;
+    height: 257px;
+}
+.ksk-arrow-img-left {
+    position: absolute;
+    left: -9px;
+    top: -3px;
+    width: 4px;
+    height: 7px;
+    background-image: url(calc_arrows_sprite.gif)/*tpa=http://foramebel.infowaf4.bget.ru/images/calc_arrows_sprite.gif*/;
+    background-position-x: -14px;
+}
+.ksk-arrow-img-right {
+    position: absolute;
+    right: -11px;
+    top: -3px;
+    width: 4px;
+    height: 7px;
+    background-image: url(calc_arrows_sprite.gif)/*tpa=http://foramebel.infowaf4.bget.ru/images/calc_arrows_sprite.gif*/;
+    background-position-x: -18px;
+}
+.ksk-arrow-img-top {
+    position: absolute;
+    right: -3px;
+    top: -6px;
+    width: 7px;
+    height: 4px;
+    background-image: url(calc_arrows_sprite.gif)/*tpa=http://foramebel.infowaf4.bget.ru/images/calc_arrows_sprite.gif*/;
+    background-position-x: 0px;
+}
+.ksk-arrow-img-bottom {
+    position: absolute;
+    right: -3px;
+    bottom: -10px;
+    width: 7px;
+    height: 4px;
+    background-image: url(calc_arrows_sprite.gif)/*tpa=http://foramebel.infowaf4.bget.ru/images/calc_arrows_sprite.gif*/;
+    background-position-x: -7px;
+}
+.ksk-arrow-height{
+    position: absolute;
+    top: 118px;
+    left: -40px;
+}
+.ksk-arrow-width{
+    position: absolute;
+    left: 137px;
+    top: -25px;
+}
+.ksk-door {
+    float: left;
+    margin-right: 7px;
+}
+.ksk-door-img {
+    width: 106px;
+    height: 274px;
+    background-color: #a6a6a6;
+}
+.ksk-door-title {
+    text-transform: uppercase;
+    margin-top: 13px;
+    margin-left: 32px;
+    font-size: 12px;
+    color: #496bab;
+}
+.ksk-door-material {
+    margin-top: 15px;
+    margin-left: 28px;
+    font-size: 12px;
+}
+.ksk-door-material label{
+    font-size: 12px;
+}
+.ksk-door-material div {
+    margin-bottom: 8px;
+    position: relative;
+}
+.ksk-door-material div label:before {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 10px;
+    margin-right: 10px;
+    position: absolute;
+    left: -24px;
+    bottom: 1px;
+    border: 1px solid grey;
+}
+.ksk-door-material div label.two-rows:before{
+    bottom: 7px;
+}
+.ksk-door-material div input[type=radio]:checked + label:before{
+    background: url(radio-little-round.gif)/*tpa=http://foramebel.infowaf4.bget.ru/images/radio-little-round.gif*/ no-repeat 1px 1.5px;;
+}
+
+.ksk-clear{
+    clear: both;
+    margin-bottom: 35px;
+}
+#kalkuljator-shkafa-kupe-container .ksk-cost{
+    margin-top: 17px;
+    margin-left: 25px;
+    font-size: 14px;
+    margin-bottom: 27px;
+}
+.ksk-cost strong{
+    font-size: 18px;
+    font-weight: bold;
+}
+@media (max-width: 890px){
+    .ksk-input-col:first-child{
+        margin-left: 107px;
+    }
+}
+@media (max-width: 400px){
+    .ksk-input-col:first-child{
+        margin-left: 0px;
+    }
+	.ksk-input-col.radio {
+  
+    margin-left: 0px; 
+}
+	.ksk-input-col {
+
+    margin-left: 0px;
+
+}
+}
+.dd-select{
+	height: 36px;
+     border-radius:2px;
+     border:solid 1px #ccc;
+     position:relative;
+     cursor:pointer;
+}
+.dd-desc {
+     color:#aaa;
+     display:block;
+     overflow: hidden;
+     font-weight:normal;
+     line-height: 1.4em;
+}
+.dd-selected{
+     overflow:hidden;
+    # display:block;
+     padding:10px;
+     font-weight:bold;
+}
+.dd-pointer{
+     width:0;
+     height:0;
+     position:absolute;
+     right:10px;
+     top:50%;
+     margin-top:-3px;
+}
+.dd-pointer-down{
+     border:solid 5px transparent;
+     border-top:solid 5px #000;
+}
+.dd-pointer-up{
+    border:solid 5px transparent !important;
+     border-bottom:solid 5px #000 !important;
+     margin-top:-8px;
+}
+.dd-options{
+     border:solid 1px #ccc;
+     border-top:none;
+     list-style:none;
+     box-shadow:0px 1px 5px #ddd;
+     display:none;
+     position:absolute;
+     z-index:2000;
+     margin:0;
+     padding:0;
+    background:#fff;
+     overflow:auto;
+}
+.dd-option{
+     padding:10px;
+     display:block;
+     border-bottom:solid 1px #ddd;
+     overflow:hidden;
+     text-decoration:none;
+     color:#333;
+     cursor:pointer;
+    -webkit-transition: all 0.25s ease-in-out;
+     -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+}
+.dd-options > li:last-child > .dd-option{
+     border-bottom:none;
+}
+.dd-option:hover{
+     background:#f3f3f3;
+     color:#000;
+}
+.dd-selected-description-truncated {
+     text-overflow: ellipsis;
+     white-space:nowrap;
+}
+.dd-option-selected {
+     background:#f6f6f6;
+}
+.dd-option-image, .dd-selected-image {
+     vertical-align:middle;
+	     height: 30px;
+     float:left;
+     margin:5px;
+     max-width:64px;
+}
+.dd-image-right {
+     float:right;
+     margin-right:15px;
+     margin-left:5px;
+}
+.dd-container{
+     position:relative;
+}
+ .dd-selected-text {
+	     color: graytext;
+     font-weight:bold
+}

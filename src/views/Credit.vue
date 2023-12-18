@@ -120,17 +120,13 @@
 </template>
 <script>
 import PreviewSection from "@/components/PreviewSection.vue";
+import CreditFunction from '@/widgets/Credit/index.js'
 
 export default {
     name: "Credit",
     components: { PreviewSection },
     mounted() {
-        let creditScript = document.createElement("script");
-        creditScript.setAttribute(
-            "src",
-            "https://v-credit.su/services/easycredit/simple/js.js"
-        );
-        document.head.appendChild(creditScript);
+        CreditFunction
     },
 };
 </script>

@@ -39,7 +39,7 @@ main {
 }
 .slide-enter-active,
 .slide-leave-active {
-    transition: 0.5s;
+    transition: 0.4s;
 }
 .slide-enter-from,
 .slide-leave-to {

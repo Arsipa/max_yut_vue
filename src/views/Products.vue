@@ -9,17 +9,17 @@
                 </button>
             </div>
         </section>
-        <AdditionalLinks />
+        <CallMeForm />
     </div>
 </template>
 <script>
 import PreviewSection from "@/components/PreviewSection.vue";
 import Grid from "@/components/Grid.vue";
-import AdditionalLinks from "@/components/AdditionalLinks.vue";
+import CallMeForm from "@/components/CallMeForm.vue";
 
 export default {
     name: "ProductsPage",
-    components: { PreviewSection, Grid, AdditionalLinks },
+    components: { PreviewSection, Grid, CallMeForm },
     props: {
         title: String,
         img: String,

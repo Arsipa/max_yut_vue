@@ -121,6 +121,16 @@ const routes = [
         name: "Credit",
         component: () => import("../views/Credit.vue"),
     },
+    // {
+    //     path: "/calculator",
+    //     name: "Calculator",
+    //     component: () => import("../views/Calculator.vue"),
+    // },
+    {
+        path: "/3d",
+        name: "3d",
+        component: () => import("../views/3d.vue"),
+    },
 ];
 
 const router = createRouter({
@@ -128,13 +138,16 @@ const router = createRouter({
     routes,
     scrollBehavior(to, from, savedPosition) {
         if (to.hash) {
-            return window.scrollTo({
-                top: document.querySelector(to.hash)?.offsetTop,
-                behavior: "smooth",
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve({
+                        el: to.hash,
+                        behavior: "smooth",
+                    });
+                }, 500);
             });
-        } else {
-            return { top: 0 };
         }
+        return { top: 0, behavior: "smooth" };
     },
 });
 

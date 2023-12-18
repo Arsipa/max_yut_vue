@@ -28,10 +28,6 @@ a {
     transition: 0.3s;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: "CenturyGothic", sans-serif;
 }

@@ -21,7 +21,7 @@
                 </ul>
             </div>
         </section>
-        <section class="categories container" id="categories">
+        <section class="categories container">
             <h2 class="bold">Категории</h2>
             <Grid :list="this.$store.state.categories" />
         </section>
@@ -45,7 +45,9 @@
                     <p>Заполните форму и получите бесплатную консультацию!</p>
                     <p>Мы свяжемся с вами в течении 5 минут!</p>
                 </div>
-                <a href="#form"> Получить консультацию </a>
+                <router-link :to="{ hash: '#form' }">
+                    Получить консультацию
+                </router-link>
             </div>
         </section>
         <section class="materials container">
@@ -178,37 +180,8 @@
                 </div>
             </div>
         </section>
-        <section class="form-section" id="form">
-            <div class="container">
-                <h2>Остались вопросы?</h2>
-                <p class="subtitle">
-                    Оставьте заявку на звонок, и наш специалист свяжется с Вами
-                    в течении 5 минут!
-                </p>
-                <form>
-                    <div class="row">
-                        <input
-                            class="input"
-                            type="text"
-                            placeholder="Имя"
-                            name="name" />
-                        <input
-                            class="input"
-                            type="tel"
-                            placeholder="Телефон*"
-                            name="phone"
-                            required />
-                    </div>
-                    <textarea
-                        class="input"
-                        name="message"
-                        placeholder="Сообщение"></textarea>
-                    <div class="centered">
-                        <button type="submit">Отправить заявку</button>
-                    </div>
-                </form>
-            </div>
-        </section>
+        <CallMeForm />
+
     </div>
 </template>
 
@@ -216,10 +189,11 @@
 import PreviewSection from "@/components/PreviewSection.vue";
 import Grid from "@/components/Grid.vue";
 import YoutubeVideos from "@/components/YoutubeVideos.vue";
+import CallMeForm from "@/components/CallMeForm.vue";
 
 export default {
     name: "Index",
-    components: { PreviewSection, Grid, YoutubeVideos },
+    components: { PreviewSection, Grid, YoutubeVideos, CallMeForm },
     data() {
         return {
             certificatesToShow: 6,
@@ -229,6 +203,15 @@ export default {
         showMore(toShow, array) {
             this[toShow] = this.$store.state[array].length;
         },
+    },
+    mounted() {
+        // if (this.$route.hash) {
+        //     let el = document.querySelector(this.$route.hash);
+        //     window.scrollTo({
+        //         top: el.offsetTop + el.offsetHeight,
+        //         behavior: "smooth",
+        //     });
+        // }
     },
 };
 </script>
@@ -415,7 +398,7 @@ export default {
 
 .certificates .certificates__grid {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -429,6 +412,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
     overflow: hidden;
     border: 2px solid var(--green);
 }
@@ -436,69 +420,5 @@ export default {
     width: 100%;
     height: 100%;
     object-fit: contain;
-}
-.form-section {
-    background: var(--green);
-    padding: 50px 0;
-    margin-bottom: -100px;
-    color: white;
-}
-
-.form-section h2 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-.form-section .subtitle {
-    margin-inline: auto;
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 26px;
-    max-width: 60%;
-}
-
-.form-section form {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 20px;
-    margin: 0 auto;
-    max-width: 700px;
-}
-.form-section form .row {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    justify-content: space-between;
-}
-.form-section form .input {
-    outline: none;
-    background: white;
-    flex-grow: 1;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 10px;
-    font-size: 20px;
-    line-height: 140%;
-}
-
-.form-section form textarea {
-    height: 200px;
-    resize: none;
-}
-
-.form-section form button {
-    font-size: 20px;
-    padding: 20px 40px;
-    cursor: pointer;
-    background: none;
-    border: 2px solid white;
-    border-radius: 10px;
-    color: white;
-    transition: 0.3s;
-    font-weight: bold;
-}
-.form-section form button:hover {
-    background: white;
-    color: var(--green);
 }
 </style>

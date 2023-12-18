@@ -1,0 +1,150 @@
+﻿<html>
+
+<head>
+  <meta http-equiv="Content-Type" content='text/html; charset=utf-8'>
+
+  <title>Калькулятор цены на двери купе</title>
+  <link rel="stylesheet" href="main.css" tppabs="https://foramebel.infowaf4.bget.ru/css/main.css" type="text/css">
+  <link rel="stylesheet" href="calc.css" tppabs="https://foramebel.infowaf4.bget.ru/css/calc.css" type="text/css">
+  <script type="text/javascript" src="jquery-3.1.1.js"
+    tppabs="https://foramebel.infowaf4.bget.ru/js/jquery-3.1.1.js"></script>
+
+  <script type="text/javascript" src="calcConstructors.js"
+    tppabs="https://foramebel.infowaf4.bget.ru/js/calcConstructors.js"></script>
+
+  <script type="text/javascript" src="../../ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.ddslick.min.js"></script>
+</head>
+
+<body>
+
+
+  <div id="kalkuljator-shkafa-kupe-container">
+    <div class="ksk-section step-one">
+      <div class="ksk-section-title blue">
+        <div class="ksk-section-title-num one">01</div>
+        <div class="ksk-section-title-content">Укажите размеры проема и профиль</div>
+      </div>
+      <div class="ksk-section-content">
+        <div class="ksk-input-row one">
+          <div class="ksk-input-col">
+            <div class="ksk-input-label"><label>Высота проема мм.</label></div>
+            <div class="ksk-input-img doorway_height"></div>
+            <input type="text" name="doorway_height" id="doorwayHeight" placeholder="0">
+          </div>
+          <div class="ksk-input-col">
+            <div class="ksk-input-label"><label>Ширина проема мм.</label></div>
+            <div class="ksk-input-img doorway_width"></div>
+            <input type="text" name="doorway_width" id="doorwayWidth" disabled="disabled" placeholder="0">
+          </div>
+          <div class="ksk-input-col">
+            <div class="ksk-input-label"><label for="profileMark">Марка профиля</label></div>
+            <div class="ksk-input-img profile_brand"></div>
+            <select id="profileMark" name="profile_brand" disabled="disabled">
+              <option value="null">Выберите профиль</option>
+            </select>
+          </div>
+        </div>
+        <hr>
+        <p class="ksk-note">* Когда поля будут все зелеными - перейдите к следующему шагу.</p>
+      </div>
+    </div>
+    <div class="ksk-section step-two">
+      <div class="ksk-section-title grey">
+        <div class="ksk-section-title-num two">02</div>
+        <div class="ksk-section-title-content">Укажите цвет профиля, количество дверей, метод покупки</div>
+      </div>
+      <div class="ksk-section-content">
+        <div class="ksk-input-row two">
+          <div class="ksk-input-col">
+            <div class="ksk-input-label"><label>Цвет профиля</label></div>
+            <div class="ksk-input-img profile_color"></div>
+            <select name="profile_color" id="profileColor" style="display:none;">
+              <option value="null">Выберите цвет профиля</option>
+            </select>
+            <div id="myDropdown"></div>
+          </div>
+          <div class="ksk-input-col">
+            <div class="ksk-input-label"><label>Кол. дверей</label></div>
+            <div class="ksk-input-img doors_number"></div>
+            <select name="doors_number" id="doorsNumber" placeholder="0" disabled="disabled">
+              <option>Выберите количество дверей</option>
+            </select>
+          </div>
+          <div class="ksk-input-col radio">
+            <div class="ksk-input-label"><label>Доставка, монтаж</label></div>
+            <div class="ksk-radio">
+              <div>
+                <input type="radio" id="deliveryInstallation" value="2" name="delivery">
+                <label for="deliveryInstallation">Дос/монтаж</label>
+              </div>
+              <div>
+                <input type="radio" id="delivery" value="1" name="delivery">
+                <label for="delivery">Доставка</label>
+              </div>
+              <div>
+                <input type="radio" id="takeIt" value="0" name="delivery" checked="checked">
+                <label for="takeIt">Заберу сам</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p class="ksk-note">Выберите...</p>
+      </div>
+    </div>
+    <div class="ksk-button">
+      <!---->
+      <a href="#calcButton" disabled="disabled"><input type="submit" value="Посчитать стоимость дверей" id="calcButton"
+          disabled="disabled"></a>
+    </div>
+    <div class="ksk-doors">
+      <div class="ksk-arrows horisontal">
+        <div class="ksk-arrow-width"></div>
+        <div class="ksk-arrow-img-left"></div>
+        <div class="ksk-arrow-horisontal-line"></div>
+        <div class="ksk-arrow-img-right"></div>
+      </div>
+      <div class="ksk-arrows vertical">
+        <div class="ksk-arrow-height"></div>
+        <div class="ksk-arrow-img-top"></div>
+        <div class="ksk-arrow-vertical-line"></div>
+        <div class="ksk-arrow-img-bottom"></div>
+      </div>
+
+    </div>
+    <div class="ksk-clear">
+    </div>
+    <hr>
+    <p class="ksk-cost">Стоимость Вашего заказа: <strong><span id="ksk-cost"></span> руб</strong></p>
+  </div>
+  <script src="https://kit.fontawesome.com/4a6b7418a3.js" crossorigin="anonymous"></script>
+
+  <!-- <script src="/assets/templates/libs/jquery/jquery-1.11.2.min.js"></script> -->
+  <script src="/assets/templates/libs/waypoints/waypoints.min.js"></script>
+  <script src="/assets/templates/libs/animate/animate-css.js"></script>
+
+  <script src="/assets/templates/libs/magnific/jquery.magnific-popup.min.js"></script>
+  <script src="/assets/templates/libs/owl.carousel/owl.carousel.min.js"></script>
+  <script src="/assets/templates/libs/slick-1.6.0/slick/slick.min.js"></script>
+  <script src="/assets/templates/libs/mixitup/jquery.mixitup.min.js"></script>
+
+  <script src="/assets/templates/js/common.js"></script>
+
+  <!-- <script src="/assets/templates/js/bootstrap.min.js"></script> -->
+
+  <script src="/assets/templates/js/jquery.maskedinput.min.js"></script>
+
+  <script src="/assets/components/ms2gallery/js/web/default.js"></script>
+
+  <script src="/assets/templates/js/script.js"></script>
+
+  <script src="/assets/templates/libs/modernizr/modernizr.js"></script>
+
+  <script type="text/javascript" src="calculator.js"
+    tppabs="https://foramebel.infowaf4.bget.ru/js/calculator.js"></script>
+
+
+</body>
+
+</html>
