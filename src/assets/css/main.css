@@ -32,6 +32,10 @@ body {
     font-family: "CenturyGothic", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 main>div>section {
     margin-bottom: 80px;
 }

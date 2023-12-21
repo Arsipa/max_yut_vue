@@ -9,18 +9,21 @@
             </router-view>
         </main>
         <Footer></Footer>
+        <ToTopButton />
     </div>
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
+import ToTopButton from '@/components/ToTopButton.vue'
 
 export default {
     name: "App",
     components: {
         Header,
         Footer,
+        ToTopButton,
     },
 };
 </script>
