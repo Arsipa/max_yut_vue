@@ -1,6 +1,7 @@
 <template>
     <div>
         <div class="container">
+            <p class="warning">ВАЖНО! Возможно изготовление любого размера по вашему желанию!</p>
             <section v-for="variant in productInfo.variants">
                 <div class="product">
                     <div class="images">
@@ -25,15 +26,16 @@
                         </div>
                     </div>
                 </div>
-                <p class="description">
+                <p class="description" v-if="variant.description !== ''">
                     <span class="bold uppercase">Описание: </span
                     >{{ variant.description }}
                 </p>
+                <p class="table-title">Размер - цена:</p>
                 <div class="table">
-                    <div class="table-column">
-                        <p class="bold">Размер</p>
+                    <!-- <div class="table-column">
+                        <p class="left bold">Размер</p>
                         <p class="left">Цена</p>
-                    </div>
+                    </div> -->
                     <div
                         v-for="table in variant.size_chart"
                         class="table-column">
@@ -65,6 +67,13 @@ export default {
 };
 </script>
 <style scoped>
+p.warning{
+    padding: 20px 0;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
 section {
     margin-bottom: 100px;
 }
@@ -99,6 +108,8 @@ h2 {
 
 .product-info .info-block {
     padding: 10px 0;
+    display: flex;
+    gap: 20px;
 }
 
 .info-block ~ .info-block {
@@ -106,10 +117,11 @@ h2 {
 }
 .product-info .title {
     font-size: 20px;
+    width: 170px;
 }
 .product-info .value {
     font-size: 18px;
-    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .description {
     font-size: 20px;
@@ -120,11 +132,12 @@ h2 {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    border: 1px solid var(--green);
-    padding: 20px;
+    /* border: 1px solid var(--green); */
+    /* padding: 20px; */
     font-size: 20px;
     border-radius: 20px;
     flex-wrap: nowrap;
+    gap: 5px;
 }
 
 .table p {
@@ -136,7 +149,7 @@ h2 {
 }
 
 .table p.bold {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 18px;
 }
 
@@ -144,9 +157,17 @@ h2 {
     padding: 10px;
     border: 1px solid gray;
     border-radius: 10px;
+    flex-grow: 1;
 }
 
-.table-column:first-child {
-    border: none;
+.table-title{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
+
+/* .table-column:first-child {
+    border: none;
+} */
 </style>

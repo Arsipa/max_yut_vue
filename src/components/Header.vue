@@ -2,19 +2,27 @@
     <header>
         <div class="header__top">
             <div class="container header__top-inner">
-                <router-link :to="{ name: 'Index', hash: '#form' }" class="dotted">
+                <router-link
+                    :to="{ name: 'Index', hash: '#form' }"
+                    class="dotted">
                     <img src="@/assets/img/stock/phone.svg" alt="" />
                     <span>Заказать звонок</span>
                 </router-link>
-                <router-link :to="{ name: 'About', hash: '#measuring' }" class="item">
+                <router-link
+                    :to="{ name: 'About', hash: '#measuring' }"
+                    class="item">
                     <img src="@/assets/img/stock/tape.svg" alt="" />
                     <span>Замер</span>
                 </router-link>
-                <router-link :to="{ name: 'About', hash: '#delivery' }" class="item">
+                <router-link
+                    :to="{ name: 'About', hash: '#delivery' }"
+                    class="item">
                     <img src="@/assets/img/stock/delivery.svg" alt="" />
                     <span>Доставка</span>
                 </router-link>
-                <router-link :to="{ name: 'About', hash: '#montage' }" class="item">
+                <router-link
+                    :to="{ name: 'About', hash: '#montage' }"
+                    class="item">
                     <img src="@/assets/img/stock/wrench.svg" alt="" />
                     <span>Монтаж</span>
                 </router-link>
@@ -33,7 +41,12 @@
                 <router-link :to="{ name: 'Index' }"
                     ><img src="@/assets/img/logo.png" alt="Максимум УЮТ"
                 /></router-link>
-                <p class="address">Адрес: {{ this.$store.state.address }}</p>
+                <p class="address underline">
+                    Адрес:
+                    <a :href="this.$store.state.address_maps_url">{{
+                        this.$store.state.address
+                    }}</a>
+                </p>
                 <div class="contact-info">
                     <a
                         :href="`tel:${this.$store.state.tel}`"

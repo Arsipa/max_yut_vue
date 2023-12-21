@@ -4,7 +4,10 @@
             <div class="footer__inner container">
                 <div>
                     <p class="address">
-                        Адрес: {{ this.$store.state.address }}
+                        Адрес:
+                        <a :href="this.$store.state.address_maps_url">{{
+                            this.$store.state.address
+                        }}</a>
                     </p>
                     <a href="/files/politica.pdf" target="_blank" class="file">
                         Политика конфиденциальности
@@ -82,6 +85,10 @@ footer {
     font-weight: bold;
     color: white;
     margin-bottom: 30px;
+}
+
+.address a {
+    color: white;
 }
 
 .file {

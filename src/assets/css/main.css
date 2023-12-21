@@ -52,10 +52,16 @@ main>div>section {
     text-transform: uppercase;
 }
 
+.underline {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 .container {
     width: 1200px;
     padding: 0 10px;
     margin-inline: auto;
+    box-sizing: content-box;
 }
 
 .absolute-link-wrapper {

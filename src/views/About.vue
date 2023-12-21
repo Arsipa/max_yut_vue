@@ -45,7 +45,7 @@
                         <h2>Контакты</h2>
                         <p>
                             <span class="bold">Адрес: </span>
-                            <a href="https://yandex.ru/maps/-/CDq6N81M">{{
+                            <a :href="this.$store.state.address_maps_url">{{
                                 this.$store.state.address
                             }}</a>
                         </p>
