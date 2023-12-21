@@ -22,7 +22,7 @@ const routes = [
         component: () => import("../views/Products.vue"),
         props: {
             title: "Встроенная мебель",
-            img: "/publicImg/previewSections/vstroennaya.jpg",
+            img: "/publicImg/previewSections/vstroennaya.jpg.webp",
             category: "vstroennaya",
         },
     },
@@ -32,7 +32,7 @@ const routes = [
         component: () => import("../views/Products.vue"),
         props: {
             title: "Мебель на заказ",
-            img: "/publicImg/previewSections/nazakaz.jpg",
+            img: "/publicImg/previewSections/nazakaz.jpg.webp",
             category: "nazakaz",
         },
     },
@@ -42,7 +42,7 @@ const routes = [
         component: () => import("../views/Products.vue"),
         props: {
             title: "Гардеробная на заказ",
-            img: "/publicImg/previewSections/garderobnaya.jpg",
+            img: "/publicImg/previewSections/garderobnaya.jpg.webp",
             category: "garderobnaya",
         },
     },
@@ -52,7 +52,7 @@ const routes = [
         component: () => import("../views/Products.vue"),
         props: {
             title: "Шкафы-купе на заказ",
-            img: "/publicImg/previewSections/kupe.jpg",
+            img: "/publicImg/previewSections/kupe.jpg.webp",
             category: "kupe",
         },
     },
@@ -62,7 +62,7 @@ const routes = [
         component: () => import("../views/Products.vue"),
         props: {
             title: "Шкафы распашные на заказ",
-            img: "/publicImg/previewSections/swing.jpg",
+            img: "/publicImg/previewSections/swing.jpg.webp",
             category: "swing",
         },
     },
@@ -72,7 +72,7 @@ const routes = [
         component: () => import("../views/Products.vue"),
         props: {
             title: "Кухни",
-            img: "/publicImg/previewSections/kuhni.jpg",
+            img: "/publicImg/previewSections/kuhni.jpg.webp",
             category: "kuhni",
         },
     },
@@ -82,7 +82,7 @@ const routes = [
         component: () => import("../views/Products.vue"),
         props: {
             title: "Матрасы",
-            img: "/publicImg/previewSections/mattresses.jpg",
+            img: "/publicImg/previewSections/mattresses.jpg.webp",
             category: "mattresses",
         },
     },

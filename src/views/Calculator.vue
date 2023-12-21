@@ -2,7 +2,7 @@
     <div>
         <PreviewSection
             title="Калькулятор дверей-купе"
-            img="/publicImg/previewSections/calcDveriKupe.jpg" />
+            img="/publicImg/previewSections/calcDveriKupe.jpg.webp" />
         <section>
             <div class="container">
                 <iframe src="@/ets/Calculatr/i.html"></iframe>

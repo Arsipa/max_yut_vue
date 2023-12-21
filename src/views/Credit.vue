@@ -2,7 +2,7 @@
     <div>
         <PreviewSection
             title="Кредит в один клик от CRED_IT"
-            img="/publicImg/previewSections/credit.jpg" />
+            img="/publicImg/previewSections/credit.jpg.webp" />
         <section>
             <div class="container">
                 <h2>Как это работает?</h2>

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <PreviewSection title="Акции" img="/publicImg/previewSections/promo.jpg" />
+        <PreviewSection title="Акции" img="/publicImg/previewSections/promo.jpg.webp" />
         <section>
             <div class="container">
                 <div class="promo-inner">

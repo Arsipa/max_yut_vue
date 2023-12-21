@@ -2,7 +2,7 @@
     <div>
         <PreviewSection
             title="О нас"
-            img="/publicImg/previewSections/about.jpg" />
+            img="/publicImg/previewSections/about.jpg.webp" />
         <section>
             <div class="container">
                 <h2>О нас</h2>
