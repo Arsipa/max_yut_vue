@@ -120,13 +120,13 @@
 </template>
 <script>
 import PreviewSection from "@/components/PreviewSection.vue";
-import CreditFunction from '@/widgets/Credit/index.js'
+import CreditFunc from "@/widgets/Credit/index.js";
 
 export default {
     name: "Credit",
     components: { PreviewSection },
     mounted() {
-        CreditFunction
+        CreditFunc();
     },
 };
 </script>
