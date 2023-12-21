@@ -10,6 +10,7 @@
         </main>
         <Footer></Footer>
         <ToTopButton />
+        <Cookie />
     </div>
 </template>
 
@@ -17,6 +18,7 @@
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import ToTopButton from '@/components/ToTopButton.vue'
+import Cookie from '@/components/Cookie.vue'
 
 export default {
     name: "App",
@@ -24,6 +26,7 @@ export default {
         Header,
         Footer,
         ToTopButton,
+        Cookie,
     },
 };
 </script>
