@@ -7,7 +7,7 @@
                     Оставьте заявку на звонок, и наш специалист свяжется с Вами
                     в течении 5 минут!
                 </p>
-                <form>
+                <form @submit.prevent="makeRequest" ref="form">
                     <div class="row">
                         <input
                             class="input"
@@ -18,15 +18,23 @@
                             class="input"
                             type="tel"
                             placeholder="Телефон*"
-                            name="phone"
+                            name="tel"
                             required />
                     </div>
                     <textarea
                         class="input"
-                        name="message"
+                        name="comment"
                         placeholder="Сообщение"></textarea>
                     <div class="centered">
-                        <button type="submit">Отправить заявку</button>
+                        <button
+                            type="submit"
+                            :class="{ disabled: isButtonDisabled }">
+                            {{
+                                isButtonDisabled
+                                    ? "Ожидайте..."
+                                    : "Отправить заявку"
+                            }}
+                        </button>
                     </div>
                 </form>
             </div>
@@ -34,8 +42,42 @@
     </div>
 </template>
 <script>
+import emailjs from "@emailjs/browser";
+
 export default {
     name: "CallMeForm",
+    data() {
+        return {
+            isButtonDisabled: false,
+        };
+    },
+    methods: {
+        async makeRequest() {
+            this.isButtonDisabled = true;
+
+            await emailjs
+                .sendForm(
+                    "service_zpz8lib", // service key
+                    "template_vcdc6w7", //template key
+                    this.$refs.form,
+                    "0QRQBy44deU5RCs9w" //public key
+                )
+                .then((response) => {
+                    console.log(response);
+                    alert(
+                        "Письмо успешно отправлено! Скоро мы с вами свяжемся"
+                    );
+                })
+                .catch((error) => {
+                    alert(
+                        "Ошибка! Попробуйте снова. При повторной ошибке напишите нам в соц. сети"
+                    );
+                });
+
+            this.isButtonDisabled = false;
+            this.$refs.form.reset();
+        },
+    },
 };
 </script>
 <style scoped>
@@ -105,14 +147,16 @@ export default {
     color: var(--green);
 }
 
-@media screen and (max-width: 1250px) {}
+@media screen and (max-width: 1250px) {
+}
 
 @media screen and (max-width: 850px) {
-    .form-section .subtitle{
+    .form-section .subtitle {
         max-width: 90%;
         font-size: 20px;
     }
 }
 
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+}
 </style>

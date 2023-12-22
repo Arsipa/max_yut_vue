@@ -28,12 +28,6 @@ export default {
         ToTopButton,
         Cookie,
     },
-    created() {
-        fetch("http://maxyut/yutAPI/").then((response) => {
-            let data = response.json();
-            console.log(data)
-        });
-    },
 };
 </script>
 

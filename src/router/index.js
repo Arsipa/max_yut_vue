@@ -126,11 +126,11 @@ const routes = [
     //     name: "Calculator",
     //     component: () => import("../views/Calculator.vue"),
     // },
-    {
-        path: "/3d",
-        name: "3d",
-        component: () => import("../views/3d.vue"),
-    },
+    // {
+    //     path: "/3d",
+    //     name: "3d",
+    //     component: () => import("../views/3d.vue"),
+    // },
 ];
 
 const router = createRouter({

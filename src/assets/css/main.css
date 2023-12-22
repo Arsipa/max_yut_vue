@@ -21,15 +21,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "CenturyGothic", sans-serif;
 }
 
 a {
     text-decoration: none;
     transition: 0.3s;
-}
-
-body {
-    font-family: "CenturyGothic", sans-serif;
 }
 
 html{

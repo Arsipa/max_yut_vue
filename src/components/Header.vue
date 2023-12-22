@@ -30,10 +30,10 @@
                     <img src="@/assets/img/stock/calc.svg" alt="" />
                     <span>Калькулятор</span>
                 </router-link> -->
-                <router-link :to="{ name: '3d' }">
+                <!-- <router-link :to="{ name: '3d' }">
                     <img src="@/assets/img/stock/3d.svg" alt="" />
                     <span>3D проект</span>
-                </router-link>
+                </router-link> -->
             </div>
         </div>
         <div class="header__middle bordered">
