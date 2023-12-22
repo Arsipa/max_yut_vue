@@ -69,6 +69,7 @@ export default {
 .form-section form .row {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
 }
@@ -103,4 +104,15 @@ export default {
     background: white;
     color: var(--green);
 }
+
+@media screen and (max-width: 1250px) {}
+
+@media screen and (max-width: 850px) {
+    .form-section .subtitle{
+        max-width: 90%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {}
 </style>

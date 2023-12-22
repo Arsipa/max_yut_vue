@@ -19,10 +19,10 @@ export default {
     },
     methods: {
         getRoute(object) {
-            if (object?.type === 'category') {
+            if (object?.type === "category") {
                 return object.route;
             }
-            return `/${object.category}/${object.id}`
+            return `/${object.category}/${object.id}`;
         },
     },
 };
@@ -36,7 +36,7 @@ export default {
     gap: 20px 0px;
 }
 .grid::after {
-    content: '';
+    content: "";
     width: 33.33%;
 }
 .card-wrapper {
@@ -70,6 +70,25 @@ img {
     height: 280px;
 }
 img:hover {
-    filter: brightness(0.8)
+    filter: brightness(0.8);
+}
+
+@media screen and (max-width: 1250px) {
+    .grid::after {
+        content: "";
+        width: 50%;
+    }
+    .card-wrapper {
+        width: 50%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .card-wrapper {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
 }
 </style>

@@ -75,4 +75,15 @@ a {
 button {
     margin-top: 0;
 }
+
+@media screen and (max-width: 850px) {
+    .bg {
+        width: 320px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    p, a {
+        text-align: center;
+    }
+}
 </style>

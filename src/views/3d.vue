@@ -306,4 +306,17 @@ textarea {
     margin-inline: auto;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 850px) {
+    .block{
+        max-width: 100%;
+    }
+    .row{
+        flex-direction: column;
+    }
+    fieldset{
+        flex: 1 1 100%;
+        width: 100%;
+    }
+}
 </style>

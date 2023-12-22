@@ -84,4 +84,11 @@ img {
     width: 100%;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 850px) {
+    .reviews-wrapper {
+        flex-direction: column;
+        gap: var(--gap);
+    }
+}
 </style>

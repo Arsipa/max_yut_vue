@@ -1,7 +1,9 @@
 <template>
     <div>
         <div class="container">
-            <p class="warning">ВАЖНО! Возможно изготовление любого размера по вашему желанию!</p>
+            <p class="warning">
+                ВАЖНО! Возможно изготовление любого размера по вашему желанию!
+            </p>
             <section v-for="variant in productInfo.variants">
                 <div class="product">
                     <div class="images">
@@ -67,7 +69,7 @@ export default {
 };
 </script>
 <style scoped>
-p.warning{
+p.warning {
     padding: 20px 0;
     font-size: 26px;
     text-align: center;
@@ -142,6 +144,7 @@ h2 {
 
 .table p {
     text-align: center;
+    font-size: 18px;
 }
 
 .table .left {
@@ -160,7 +163,7 @@ h2 {
     flex-grow: 1;
 }
 
-.table-title{
+.table-title {
     font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
@@ -170,4 +173,44 @@ h2 {
 /* .table-column:first-child {
     border: none;
 } */
+
+@media screen and (max-width: 1250px) {
+    .product-info .title {
+        width: unset;
+        min-width: 160px;
+    }
+    .table {
+        flex-wrap: wrap;
+    }
+    p.warning {
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }
+    .product-info .info-block {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    section {
+        margin-bottom: 60px;
+    }
+    .product {
+        flex-direction: column;
+    }
+    .images {
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .table p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+}
 </style>

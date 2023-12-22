@@ -17,8 +17,8 @@
 <script>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
-import ToTopButton from '@/components/ToTopButton.vue'
-import Cookie from '@/components/Cookie.vue'
+import ToTopButton from "@/components/ToTopButton.vue";
+import Cookie from "@/components/Cookie.vue";
 
 export default {
     name: "App",
@@ -28,11 +28,18 @@ export default {
         ToTopButton,
         Cookie,
     },
+    created() {
+        fetch("http://maxyut/yutAPI/").then((response) => {
+            let data = response.json();
+            console.log(data)
+        });
+    },
 };
 </script>
 
 <style scoped>
 @import "@/assets/css/main.css";
+@import "@/assets/css/media.css";
 </style>
 <style>
 .wrapper {

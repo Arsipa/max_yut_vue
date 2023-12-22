@@ -181,7 +181,6 @@
             </div>
         </section>
         <CallMeForm />
-
     </div>
 </template>
 
@@ -196,22 +195,13 @@ export default {
     components: { PreviewSection, Grid, YoutubeVideos, CallMeForm },
     data() {
         return {
-            certificatesToShow: 6,
+            certificatesToShow: 3,
         };
     },
     methods: {
         showMore(toShow, array) {
             this[toShow] = this.$store.state[array].length;
         },
-    },
-    mounted() {
-        // if (this.$route.hash) {
-        //     let el = document.querySelector(this.$route.hash);
-        //     window.scrollTo({
-        //         top: el.offsetTop + el.offsetHeight,
-        //         behavior: "smooth",
-        //     });
-        // }
     },
 };
 </script>
@@ -238,6 +228,7 @@ export default {
     padding: 20px;
     border: 2px solid white;
     border-radius: 10px;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -294,9 +285,11 @@ export default {
     font-size: 20px;
     border: 2px solid white;
     color: white;
+    text-wrap: nowrap;
     border-radius: 10px;
     transition: 0.3s;
     font-weight: bold;
+    text-align: center;
 }
 .call-to-action a:hover {
     background-color: white;
@@ -420,5 +413,92 @@ export default {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+@media screen and (max-width: 1250px) {
+    .call-to-action .call-to-action__inner {
+        gap: 20px;
+    }
+    .call-to-action .call-to-action__text p {
+        font-size: 20px;
+    }
+    .call-to-action .call-to-action__text p:last-child {
+        font-size: 16px;
+    }
+    .call-to-action a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .why, .form-section, .call-to-action {
+        padding: 20px 0;
+    }
+    .why li {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .promo .promo__link {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .promo .promo__link img {
+        width: 25px;
+        height: 25px;
+    }
+    .call-to-action .call-to-action__inner {
+        gap: 0px;
+    }
+    .call-to-action .call-to-action__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .call-to-action .call-to-action__text p {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .call-to-action .call-to-action__text p:last-child {
+        text-align: center;
+    }
+    .materials .material__title {
+        font-size: 16px;
+    }
+    .hiw .hiw__item-wrapper:nth-child(2n) .hiw__item{
+        align-items: flex-end;
+    }
+    .hiw .hiw__item-wrapper:nth-child(2n) .hiw__item .title,
+    .hiw .hiw__item-wrapper:nth-child(2n) .hiw__item .text{
+        text-align: right;
+    }
+    .hiw .hiw__item{
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        max-width: 100%;
+    }
+    .hiw .hiw__item .num{
+        min-width: 50px;
+        min-height: 50px;
+        font-size: 18px;
+    }
+    .hiw .hiw__item .title{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .hiw .hiw__item .text{
+        font-size: 16px;
+    }
+    .certificates .certificate-wrapper{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .certificates .certificate-wrapper{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
 }
 </style>

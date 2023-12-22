@@ -49,4 +49,15 @@ h1 {
     font-size: 50px;
     text-align: center;
 }
+
+@media screen and (max-width: 850px) {
+    h1 {
+        font-size: 40px;
+    }
+    section {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 480px) {}
 </style>

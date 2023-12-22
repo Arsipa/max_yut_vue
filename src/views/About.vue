@@ -241,4 +241,29 @@ h3 {
     border: none;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 1250px) {
+    .contacts{
+        flex-direction: column;
+    }
+    .contacts iframe{
+        width: 100%;
+    }
+    section p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    h3 {
+        font-size: 20px;
+    }
+    section p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+}
 </style>

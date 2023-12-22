@@ -3,7 +3,9 @@
         <PreviewSection
             title="Наш канал на Ютуб"
             img="https://yt3.googleusercontent.com/v9FZxJZg8z_gWWzkUN4G9xeTG3xv_wyAbFm9YjoVFXpcDdCmHcUlOL_u9F9mYNSVatUbM_DMedM=s176-c-k-c0x00ffffff-no-rj" />
-        <YoutubeVideos />
+        <div class="container">
+            <YoutubeVideos />
+        </div>
     </div>
 </template>
 <script>

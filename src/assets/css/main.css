@@ -52,6 +52,10 @@ main>div>section {
     color: var(--green);
 }
 
+.hidden {
+    display: none;
+}
+
 .uppercase {
     text-transform: uppercase;
 }

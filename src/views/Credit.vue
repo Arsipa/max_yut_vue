@@ -148,7 +148,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 20px;
     padding: 30px;
     border: 2px solid var(--green);
@@ -238,4 +238,26 @@ h2 {
 .partners img {
     width: 100%;
 }
+
+@media screen and (max-width: 1250px) {}
+
+@media screen and (max-width: 850px) {
+    .hiw {
+        flex-grow: 1;
+    }
+    .conditions .subtitle, 
+    .conditions .warning{
+        max-width: 100%;
+    }
+    .partners .partners-img{
+        flex: 0 1 40%
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .partners .partners-img{
+        flex: 1 1 100%
+    }
+}
+
 </style>

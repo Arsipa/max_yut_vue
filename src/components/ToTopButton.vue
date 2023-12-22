@@ -2,9 +2,9 @@
     <div>
         <button @click="scrollToTop" v-if="showButton">
             <svg
-                width="21"
-                height="11"
-                viewBox="0 0 21 11"
+                width="20"
+                height="10"
+                viewBox="0 0 20 10"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -78,5 +78,26 @@ button {
 }
 button:hover {
     opacity: 0.8;
+}
+
+@media screen and (max-width: 850px) {
+    button {
+        left: 20px;
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    button {
+        width: 40px;
+        height: 40px;
+        left: 10px;
+        bottom: 10px;
+        border-width: 1px;
+    }
+    button svg {
+        width: 80%;
+        height: 80%;
+    }
 }
 </style>

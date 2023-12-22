@@ -296,4 +296,44 @@ h1 {
     color: white;
     background: var(--green);
 } */
+
+@media screen and (max-width: 1250px) {
+    h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .images{
+        min-width: 40%;
+        max-width: 40%;
+    }
+    .table{
+        gap: 10px;
+    }
+    .table__title{
+        font-size: 16px;
+    }
+    .table__value{
+        font-size: 14px;
+    }
+    .slider .slider__slide{
+        min-width: 50%;
+        max-width: 50%;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .product {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+    .images{
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+}
 </style>

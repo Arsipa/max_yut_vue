@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="youtube container">
+        <div class="youtube">
             <div class="youtube__grid">
                 <div
                     class="youtube-frame-wrapper"
@@ -108,6 +108,7 @@ export default {
 .youtube .youtube__link {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     padding: 20px 30px;
     border-radius: 10px;
@@ -119,4 +120,28 @@ export default {
 .youtube .youtube__link img {
     width: 50px;
 }
+
+
+@media screen and (max-width: 1250px) {
+    .youtube .youtube-frame-wrapper{
+        height: 250px;
+    }
+
+}
+@media screen and (max-width: 850px) {
+    .youtube .youtube-frame-wrapper{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .youtube .youtube__bottom{
+        flex-direction: column;
+    }
+    .youtube .youtube__link{
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {}
 </style>
