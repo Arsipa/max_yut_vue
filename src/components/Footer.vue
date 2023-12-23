@@ -26,25 +26,35 @@
                 <div class="socials">
                     <a
                         class="green"
+                        target="_blank"
                         href="https://www.instagram.com/mebel_maximum_uyt"
                         ><img
                             src="@/assets/img/stock/instagram.svg"
                             alt="Инстаграм"
                     /></a>
-                    <a class="green" href="https://vk.com/uyutmaksimum"
+                    <a
+                        class="green"
+                        target="_blank"
+                        href="https://vk.com/uyutmaksimum"
                         ><img src="@/assets/img/stock/vk.svg" alt="ВК"
                     /></a>
-                    <a class="green" href="https://t.me/@uyutmru"
+                    <a class="green" target="_blank" href="https://t.me/uyutmru"
                         ><img
                             src="@/assets/img/stock/telegram.svg"
                             alt="Телеграм"
                     /></a>
-                    <a class="green" href="https://wa.me/+79263526185"
+                    <a
+                        class="green"
+                        target="_blank"
+                        href="https://wa.me/+79263526185"
                         ><img
                             src="@/assets/img/stock/whatsapp.svg"
                             alt="Вотсап"
                     /></a>
-                    <a class="green" :href="this.$store.state.youtube"
+                    <a
+                        class="green"
+                        target="_blank"
+                        :href="this.$store.state.youtube"
                         ><img src="@/assets/img/stock/youtube.svg" alt="Ютуб"
                     /></a>
                 </div>
@@ -134,10 +144,11 @@ footer {
     margin-top: 30px;
 }
 
-@media screen and (max-width: 1250px) {}
+@media screen and (max-width: 1250px) {
+}
 
 @media screen and (max-width: 850px) {
-    .footer__inner{
+    .footer__inner {
         flex-direction: column;
         align-items: center;
         gap: 50px;
@@ -149,10 +160,11 @@ footer {
         display: block;
         text-align: center;
     }
-    .socials{
+    .socials {
         gap: 0px;
     }
 }
 
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+}
 </style>

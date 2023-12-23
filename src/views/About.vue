@@ -99,9 +99,9 @@
                     выгодные условия сотрудничества.
                 </p>
                 <div class="centered">
-                    <a :href="'tel:' + this.$store.state.tel" class="btn"
-                        >Узнать больше</a
-                    >
+                    <router-link :to="{ hash: '#form' }" class="btn">
+                        Узнать больше
+                    </router-link>
                 </div>
             </div>
         </section>
@@ -243,10 +243,10 @@ h3 {
 }
 
 @media screen and (max-width: 1250px) {
-    .contacts{
+    .contacts {
         flex-direction: column;
     }
-    .contacts iframe{
+    .contacts iframe {
         width: 100%;
     }
     section p {

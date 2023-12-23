@@ -8,6 +8,7 @@ export default createStore({
         address: "125493, г. Москва, ул. Нарвская. д. 23, этаж 3, офис 310",
         address_maps_url: "https://yandex.ru/maps/-/CDq6N81M",
         youtube: "https://www.youtube.com/@user-wx5bw6xd5e/videos",
+        
         products: {
             vstroennaya: [
                 {
