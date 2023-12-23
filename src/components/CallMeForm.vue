@@ -16,6 +16,7 @@
                             name="name" />
                         <input
                             class="input"
+                            v-mask="'+7 (###) ###-##-##'"
                             type="tel"
                             placeholder="Телефон*"
                             name="tel"
@@ -43,9 +44,11 @@
 </template>
 <script>
 import emailjs from "@emailjs/browser";
+import { mask } from "vue-the-mask";
 
 export default {
     name: "CallMeForm",
+    directives: { mask },
     data() {
         return {
             isButtonDisabled: false,
