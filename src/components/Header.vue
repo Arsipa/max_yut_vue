@@ -306,7 +306,9 @@ export default {
 .header__bottom {
     padding: 20px 0;
 }
-
+.burger-alignment{
+    display: none;
+}
 .burger-inner {
     display: flex;
     align-items: stretch;
