@@ -4,9 +4,11 @@
             <div>
                 <p class="address">
                     Адрес:
-                    <a :href="this.$store.state.address_maps_url">{{
-                        this.$store.state.address
-                    }}</a>
+                    <a
+                        target="_blank"
+                        :href="this.$store.state.address_maps_url"
+                        >{{ this.$store.state.address }}</a
+                    >
                 </p>
                 <a href="/files/politica.pdf" target="_blank" class="file">
                     Политика конфиденциальности
@@ -14,11 +16,13 @@
             </div>
             <div class="contact-info">
                 <a
+                    target="_blank"
                     :href="`tel:${this.$store.state.tel}`"
                     class="contact blue bold"
                     >{{ this.$store.state.tel }}</a
                 >
                 <a
+                    target="_blank"
                     :href="`mailto:${this.$store.state.email}`"
                     class="contact blue bold"
                     >{{ this.$store.state.email }}</a

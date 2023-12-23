@@ -43,6 +43,7 @@
                         ><img src="@/assets/img/logo.png" alt="Максимум УЮТ"
                     /></router-link>
                     <a
+                        target="_blank"
                         :href="this.$store.state.address_maps_url"
                         class="address underline">
                         Адрес:
@@ -50,37 +51,52 @@
                     </a>
                     <div class="contact-info">
                         <a
+                            target="_blank"
                             :href="`tel:${this.$store.state.tel}`"
                             class="contact blue bold"
                             >{{ this.$store.state.tel }}</a
                         >
                         <a
+                            target="_blank"
                             :href="`mailto:${this.$store.state.email}`"
                             class="contact blue bold"
                             >{{ this.$store.state.email }}</a
                         >
                         <div class="socials">
                             <a
-                                class="green" target="_blank"
+                                class="green"
+                                target="_blank"
                                 href="https://www.instagram.com/mebel_maximum_uyt"
                                 ><img
                                     src="@/assets/img/stock/instagram.svg"
                                     alt="Инстаграм"
                             /></a>
-                            <a class="green" target="_blank" href="https://vk.com/uyutmaksimum"
+                            <a
+                                class="green"
+                                target="_blank"
+                                href="https://vk.com/uyutmaksimum"
                                 ><img src="@/assets/img/stock/vk.svg" alt="ВК"
                             /></a>
-                            <a class="green" target="_blank" href="https://t.me/uyutmru"
+                            <a
+                                class="green"
+                                target="_blank"
+                                href="https://t.me/uyutmru"
                                 ><img
                                     src="@/assets/img/stock/telegram.svg"
                                     alt="Телеграм"
                             /></a>
-                            <a class="green" target="_blank" href="https://wa.me/+79263526185"
+                            <a
+                                class="green"
+                                target="_blank"
+                                href="https://wa.me/+79263526185"
                                 ><img
                                     src="@/assets/img/stock/whatsapp.svg"
                                     alt="Вотсап"
                             /></a>
-                            <a class="green" target="_blank" :href="this.$store.state.youtube"
+                            <a
+                                class="green"
+                                target="_blank"
+                                :href="this.$store.state.youtube"
                                 ><img
                                     src="@/assets/img/stock/youtube.svg"
                                     alt="Ютуб"
@@ -133,6 +149,7 @@
                 </nav>
                 <div :class="{ hidden: !isBurgerOpen }">
                     <a
+                        target="_blank"
                         :href="this.$store.state.address_maps_url"
                         class="address underline">
                         Адрес:
@@ -140,37 +157,52 @@
                     </a>
                     <div class="contact-info">
                         <a
+                            target="_blank"
                             :href="`tel:${this.$store.state.tel}`"
                             class="contact blue bold"
                             >{{ this.$store.state.tel }}</a
                         >
                         <a
+                            target="_blank"
                             :href="`mailto:${this.$store.state.email}`"
                             class="contact blue bold"
                             >{{ this.$store.state.email }}</a
                         >
                         <div class="socials">
                             <a
+                                target="_blank"
                                 class="green"
                                 href="https://www.instagram.com/mebel_maximum_uyt"
                                 ><img
                                     src="@/assets/img/stock/instagram.svg"
                                     alt="Инстаграм"
                             /></a>
-                            <a class="green" href="https://vk.com/uyutmaksimum"
+                            <a
+                                target="_blank"
+                                class="green"
+                                href="https://vk.com/uyutmaksimum"
                                 ><img src="@/assets/img/stock/vk.svg" alt="ВК"
                             /></a>
-                            <a class="green" href="https://t.me/@uyutmru"
+                            <a
+                                target="_blank"
+                                class="green"
+                                href="https://t.me/@uyutmru"
                                 ><img
                                     src="@/assets/img/stock/telegram.svg"
                                     alt="Телеграм"
                             /></a>
-                            <a class="green" href="https://wa.me/+79263526185"
+                            <a
+                                target="_blank"
+                                class="green"
+                                href="https://wa.me/+79263526185"
                                 ><img
                                     src="@/assets/img/stock/whatsapp.svg"
                                     alt="Вотсап"
                             /></a>
-                            <a class="green" :href="this.$store.state.youtube"
+                            <a
+                                target="_blank"
+                                class="green"
+                                :href="this.$store.state.youtube"
                                 ><img
                                     src="@/assets/img/stock/youtube.svg"
                                     alt="Ютуб"
@@ -306,7 +338,7 @@ export default {
 .header__bottom {
     padding: 20px 0;
 }
-.burger-alignment{
+.burger-alignment {
     display: none;
 }
 .burger-inner {
@@ -377,13 +409,13 @@ export default {
     }
 }
 @media screen and (max-width: 850px) {
-    .header__bottom{
+    .header__bottom {
         padding: 5px 0;
     }
-    .header__middle{
+    .header__middle {
         padding: 0;
     }
-    .header__bottom nav a{
+    .header__bottom nav a {
         font-size: 18px;
     }
     .header__top-inner {
