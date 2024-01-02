@@ -37,6 +37,7 @@
                             }}
                         </button>
                     </div>
+                    <p class="warning">Отправляя заявку, вы даёте согласие на обработку персональных данных</p>
                 </form>
             </div>
         </section>
@@ -150,6 +151,15 @@ export default {
     color: var(--green);
 }
 
+p.warning {
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.8;
+    max-width: 50%;
+    margin: 0 auto;
+    letter-spacing: 0.8px;
+}
+
 @media screen and (max-width: 1250px) {
 }
 
@@ -157,6 +167,9 @@ export default {
     .form-section .subtitle {
         max-width: 90%;
         font-size: 20px;
+    }
+    p.warning {
+        max-width: 100%;
     }
 }
 
