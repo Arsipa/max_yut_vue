@@ -28,7 +28,7 @@
         <section class="promo container">
             <h2>Акции</h2>
             <img
-                src="/publicImg/promo/promo.png"
+                src="/publicImg/promo/promo.png.webp"
                 alt="Комплектом дешевле"
                 loading="lazy"
                 class="promo__img" />

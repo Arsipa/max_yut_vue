@@ -2333,32 +2333,32 @@ export default createStore({
             {
                 title: "Ведущая австрийская компания по производству ЛДСП",
                 short_title: "EEGGER",
-                img: "/publicImg/materials/EEGGER.png",
+                img: "/publicImg/materials/EEGGER.png.webp",
             },
             {
                 title: "Продукция для кухни современного европейского уровня качества",
                 short_title: "AMK ТРОЯ",
-                img: "/publicImg/materials/amk.png",
+                img: "/publicImg/materials/amk.png.webp",
             },
             {
                 title: "Мойки, которые не требуют сложного ухода",
                 short_title: "Grand Fest",
-                img: "/publicImg/materials/grandfest.png",
+                img: "/publicImg/materials/grandfest.png.webp",
             },
             {
                 title: "Один из лидеров рынка мебельной фурнитуры",
                 short_title: "Boyard",
-                img: "/publicImg/materials/Boyard.png",
+                img: "/publicImg/materials/Boyard.png.webp",
             },
             {
                 title: "Один из самых крупных производителей мебельных фасадов в мире",
                 short_title: "AGT",
-                img: "/publicImg/materials/agt.png",
+                img: "/publicImg/materials/agt.png.webp",
             },
             {
                 title: "Высококачественная австрийская фурнитура для современной мебели",
                 short_title: "Blum",
-                img: "/publicImg/materials/blum.png",
+                img: "/publicImg/materials/blum.png.webp",
             },
             {
                 title: "Крупнейший бренд искусственного камня",
@@ -2368,12 +2368,12 @@ export default createStore({
             {
                 title: "Мебельная фурнитура и комплектующие из Германии",
                 short_title: "Rehau",
-                img: "/publicImg/materials/Rehau.png",
+                img: "/publicImg/materials/Rehau.png.webp",
             },
             {
                 title: "Ведущий поставщик и производитель комплектующих для шкафов-купе",
                 short_title: "Aristo",
-                img: "/publicImg/materials/Aristo.png",
+                img: "/publicImg/materials/Aristo.png.webp",
             },
         ],
         certificates: [
