@@ -26,14 +26,6 @@
                     <img src="@/assets/img/stock/wrench.svg" alt="" />
                     <span>Монтаж</span>
                 </router-link>
-                <!-- <router-link :to="{ name: 'Calculator' }" class="item">
-                    <img src="@/assets/img/stock/calc.svg" alt="" />
-                    <span>Калькулятор</span>
-                </router-link> -->
-                <!-- <router-link :to="{ name: '3d' }">
-                    <img src="@/assets/img/stock/3d.svg" alt="" />
-                    <span>3D проект</span>
-                </router-link> -->
             </div>
         </div>
         <div class="header__middle bordered">
@@ -134,18 +126,10 @@
                         }"
                         >{{ category.title }}</router-link
                     >
-                    <router-link
-                        :to="{ name: 'Mattresses' }"
-                        :class="{
-                            'router-link-active': isRouteActive('/mattresses'),
-                        }"
-                        >Матрасы</router-link
-                    >
                     <router-link :to="{ name: 'Videos' }">Видео</router-link>
                     <router-link :to="{ name: 'About' }">О нас</router-link>
                     <router-link :to="{ name: 'Promo' }">Акции</router-link>
                     <router-link :to="{ name: 'Reviews' }">Отзывы</router-link>
-                    <router-link :to="{ name: 'Credit' }">Кредит</router-link>
                 </nav>
                 <div :class="{ hidden: !isBurgerOpen }">
                     <a

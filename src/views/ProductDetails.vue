@@ -76,6 +76,7 @@
                         <p class="table__value">{{ info.value }}</p>
                     </div>
                 </div>
+                <p>Возможно оформление в рассрочку</p>
             </div>
         </div>
         <!-- <div class="change-page-wrapper">
