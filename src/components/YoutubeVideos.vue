@@ -23,6 +23,7 @@
                     >Больше видео</router-link
                 >
                 <a class="youtube__link" :href="this.$store.state.youtube"
+                target="_blank"
                     ><img
                         src="@/assets/img/stock/youtube-big.svg"
                         :alt="this.$store.state.youtube" />
