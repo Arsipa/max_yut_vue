@@ -960,37 +960,6 @@ export default createStore({
                         },
                     ],
                 },
-                {
-                    id: 29,
-                    title: "Гардеробная комната 23",
-                    img: "/publicImg/garderobnaya/101/1-0.jpg.webp",
-                    imgList: [
-                        "/publicImg/garderobnaya/101/1-0.jpg.webp",
-                        "/publicImg/garderobnaya/101/1-1.jpg.webp",
-                        "/publicImg/garderobnaya/101/1-2.jpg.webp",
-                        "/publicImg/garderobnaya/101/1-3.jpg.webp",
-                        "/publicImg/garderobnaya/101/1-4.jpg.webp",
-                    ],
-                    category: "garderobnaya",
-                    info: [
-                        {
-                            title: "Корпус и фасады",
-                            value: "ЛДСП Egger 16мм",
-                        },
-                        {
-                            title: "Габариты (Ш-Г-В):",
-                            value: "3000х600х2700",
-                        },
-                        {
-                            title: "Фурнитура:",
-                            value: "Boyrd",
-                        },
-                        {
-                            title: "Стоимость:",
-                            value: "25 000р.",
-                        },
-                    ],
-                },
             ],
             kupe: [
                 {
