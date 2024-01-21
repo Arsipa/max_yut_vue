@@ -23,7 +23,7 @@
         </section>
         <section class="categories container">
             <h2 class="bold">Категории</h2>
-            <Grid :list="this.$store.state.categories" />
+            <Grid :list="this.$store.state.categories" type="category" />
         </section>
         <section class="promo container">
             <h2>Акции</h2>

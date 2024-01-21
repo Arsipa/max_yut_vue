@@ -1,12 +1,17 @@
 <template>
     <div class="grid">
         <div class="card-wrapper" v-for="item in list">
-            <router-link :to="getRoute(item)">
+            <router-link :to="item.route" v-if="this.type === 'category'">
                 <div class="card">
                     <h3>{{ item.title }}</h3>
                     <img :src="item.img" :alt="item.title" loading="lazy" />
                 </div>
             </router-link>
+            <a :href="item" target="_blank" v-else>
+                <div class="card">
+                    <img :src="item" loading="lazy" />
+                </div>
+            </a>
         </div>
     </div>
 </template>
@@ -16,14 +21,7 @@ export default {
     name: "Grid",
     props: {
         list: Array,
-    },
-    methods: {
-        getRoute(object) {
-            if (object?.type === "category") {
-                return object.route;
-            }
-            return `/${object.category}/${object.id}`;
-        },
+        type: String,
     },
 };
 </script>
@@ -33,7 +31,6 @@ export default {
     align-items: stretch;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px 0px;
 }
 .grid::after {
     content: "";
@@ -47,15 +44,12 @@ export default {
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* background: var(--green); */
     border-radius: 10px;
 }
 h3 {
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 10px;
-    /* text-align: center; */
-    /* color: white; */
     text-transform: uppercase;
     color: black;
     display: flex;

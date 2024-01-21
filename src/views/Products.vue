@@ -1,13 +1,8 @@
 <template>
     <div>
-        <PreviewSection :title="title" :img="img"/>
+        <PreviewSection :title="title" :img="img" />
         <section class="products container">
-            <Grid :list="listToShow" />
-            <div class="centered">
-                <button class="btn" @click="loadMore" v-if="showSeeMoreButton">
-                    Загрузить еще
-                </button>
-            </div>
+            <Grid :list="list" />
         </section>
         <CallMeForm />
     </div>
@@ -28,26 +23,12 @@ export default {
     data() {
         return {
             list: [],
-            listToShow: [],
-            pageLimit: 9,
         };
-    },
-    computed: {
-        showSeeMoreButton() {
-            return this.listToShow.length < this.list.length;
-        },
     },
     methods: {
         loadProducts() {
             this.list = this.$store.getters.getProductsByCategory(
                 this.category
-            );
-            this.listToShow = this.list.slice(0, this.pageLimit);
-        },
-        loadMore() {
-            this.listToShow = this.list.slice(
-                0,
-                this.listToShow.length + this.pageLimit
             );
         },
     },
@@ -61,6 +42,4 @@ export default {
     },
 };
 </script>
-<style scoped>
-
-</style>
+<style scoped></style>

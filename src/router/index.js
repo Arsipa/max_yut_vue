@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Index from "../views/Index.vue";
-import store from "../store/index.js";
+// import store from "../store/index.js";
 
 const routes = [
     {
@@ -77,11 +77,6 @@ const routes = [
         },
     },
     {
-        path: "/:category/:id",
-        name: "ProductDetails",
-        component: () => import("../views/ProductDetails.vue"),
-    },
-    {
         path: "/videos",
         name: "Videos",
         component: () => import("../views/Videos.vue"),
@@ -119,20 +114,6 @@ const router = createRouter({
         }
         return { top: 0, behavior: "smooth" };
     },
-});
-
-router.beforeEach((to, from) => {
-    if (to?.params?.category) {
-        let [category, id] = [to.params.category, to.params.id];
-        let product = store.getters.getProductByCategoryAndId({
-            category: category,
-            id: id,
-        });
-        if (product === undefined) {
-            alert("Такого товара не существует(");
-            return { name: "Index" };
-        }
-    }
 });
 
 export default router;
