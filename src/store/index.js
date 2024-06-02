@@ -61,37 +61,37 @@ export default createStore({
 		categories: [
 			{
 				title: 'Встроенная мебель',
-				img: '/publicImg/vstroennaya/vstroennaya.jpg.webp',
+				img: '/publicImg/vstroennaya/1.jpg',
 				route: '/vstroennaya',
 				type: 'category',
 			},
 			{
 				title: 'Мебель на заказ',
-				img: '/publicImg/nazakaz/nazakaz.jpg.webp',
+				img: '/publicImg/nazakaz/1.jpg',
 				route: '/nazakaz',
 				type: 'category',
 			},
 			{
 				title: 'Гардеробная',
-				img: '/publicImg/garderobnaya/garderob.jpg.webp',
+				img: '/publicImg/garderobnaya/1.jpeg',
 				route: '/garderobnaya',
 				type: 'category',
 			},
 			{
 				title: 'Шкафы-купе',
-				img: '/publicImg/kupe/kupe.jpg.webp',
+				img: '/publicImg/kupe/1.jpg',
 				route: '/kupe',
 				type: 'category',
 			},
 			{
 				title: 'Шкафы распашные',
-				img: '/publicImg/kupe/109/1-0.jpg.webp',
+				img: '/publicImg/kupe/1.jpg',
 				route: '/swing',
 				type: 'category',
 			},
 			{
 				title: 'Кухни',
-				img: '/publicImg/kuhni/kuhni.jpg.webp',
+				img: '/publicImg/kuhni/1.jpg',
 				route: '/kuhni',
 				type: 'category',
 			},
