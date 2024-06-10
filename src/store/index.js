@@ -85,7 +85,7 @@ export default createStore({
 			},
 			{
 				title: 'Шкафы распашные',
-				img: '/publicImg/kupe/1.jpg',
+				img: '/publicImg/swing/1.jpg',
 				route: '/swing',
 				type: 'category',
 			},
