@@ -4,8 +4,8 @@ export default createStore({
 	state: {
 		tel: '+7 (926) 352-61-85',
 		email: 'uyut-m2012@yandex.ru',
-		address: '125493, г. Москва, ул. Нарвская. д. 23, этаж 3, офис 310',
-		address_maps_url: 'https://yandex.ru/maps/-/CDq6N81M',
+		address: 'г. Москва, Ленинградское шоссе , дом 22, этаж 1, офис 2',
+		address_maps_url: 'https://yandex.ru/maps/-/CDvPuO86',
 		youtube: 'https://www.youtube.com/@user-wx5bw6xd5e/videos',
 
 		categoryImages: {
@@ -90,7 +90,7 @@ export default createStore({
 				type: 'category',
 			},
 			{
-				title: 'Кухни',
+				title: 'Кухонный гарнитур',
 				img: '/publicImg/kuhni/1.jpg',
 				route: '/kuhni',
 				type: 'category',
